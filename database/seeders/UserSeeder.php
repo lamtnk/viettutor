@@ -29,5 +29,14 @@ class UserSeeder extends Seeder
             'phone' => '0987654321',
             'address' => '456 Main St',
         ]);
+        // Tạo gia sư
+        User::create([
+            'user_type' => 'tutor',
+            'name' => 'Gia sư 2',
+            'email' => 'tutor2@example.com',
+            'password' => Hash::make('password'),
+            'phone' => '0987653321',
+            'address' => '456 Main St',
+        ]);
     }
 }

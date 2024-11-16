@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\TutorController;
+use App\Http\Controllers\Client\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('admin.dashboard.index');
+// });
+Route::prefix('admin')->group(function () {
+    Route::prefix('tutor')->group(function () {
+        Route::get('/', [TutorController::class, 'index'])->name('tutor.index');
+    });
+});
+
+Route::prefix('/')->group(function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home.index');
 });

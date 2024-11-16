@@ -10,8 +10,16 @@ class TutorProfile extends Model
     use HasFactory;
 
     protected $fillable = [
-        'user_id', 'bio', 'experience_years', 'specialties', 'certificates', 
-        'average_rating', 'total_hours_taught', 'min_hourly_rate', 'max_hourly_rate', 'profile_image'
+        'user_id',
+        'bio',
+        'experience_years',
+        'specialties',
+        'certificates',
+        'average_rating',
+        'total_hours_taught',
+        'min_hourly_rate',
+        'max_hourly_rate',
+        'profile_image'
     ];
 
     public function user()
