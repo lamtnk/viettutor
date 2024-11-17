@@ -84,7 +84,7 @@
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
                     Chúng Tôi Làm Gì</h4>
-                <h1 class="mb-5 display-3">Bắt Đầu Hành Trình Học Tập Cùng Viettutor</h1>
+                <h1 class="mb-5 display-3">Bắt Đầu Hành Trình Học Tập Cùng VietTutor</h1>
             </div>
             <div class="row g-5">
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
