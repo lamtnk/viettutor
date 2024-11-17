@@ -8,6 +8,6 @@ class HomeService
 {
     public function getAll()
     {
-        return TutorProfile::all();
+        return TutorProfile::with('user')->get();
     }
 }

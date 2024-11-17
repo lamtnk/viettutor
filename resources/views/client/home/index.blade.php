@@ -7,7 +7,7 @@
             <div class="row g-5">
                 <div class="col-lg-7 col-md-12">
                     <h1 class="mb-3 text-primary display-5">Chúng Tôi Quan Tâm Tương Lai Của Con Bạn</h1>
-                    <h1 class="mb-5 display-1 text-white">"Nền tảng kết nối gia sư với học viên tốt nhất.</h1>
+                    <h1 class="mb-5 display-1 text-white">Nền tảng kết nối gia sư với học viên tốt nhất.</h1>
                     <a href="" class="btn btn-primary px-4 py-3 px-md-5  me-4 btn-border-radius">Bắt Đầu Ngay</a>
                     <a href="" class="btn btn-primary px-4 py-3 px-md-5 btn-border-radius">Tìm Hiểu Thêm</a>
                 </div>
@@ -33,8 +33,8 @@
                     <h4
                         class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
                         Giới thiệu về chúng tôi</h4>
-                    <h1 class="text-dark mb-4 display-5">Phương pháp học tập thông minh để xây dựng tương lai sáng cho con
-                        bạn.</h1>
+                    <h1 class="text-dark mb-4 display-5">Phương pháp học tập thông minh để xây dựng tương lai tươi sáng cho
+                        con bạn.</h1>
                     <p class="text-dark mb-4">Chúng tôi cung cấp các chương trình gia sư linh hoạt, được thiết kế riêng để
                         hỗ trợ trẻ phát triển toàn diện cả về học tập và kỹ năng sống. Hợp tác cùng đội ngũ gia sư tận tâm
                         và giàu kinh nghiệm.
@@ -148,7 +148,7 @@
     <!-- Programs Start -->
     <div class="container-fluid program  py-5">
         <div class="container py-5">
-            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 800px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
                     Chương trình của chúng tôi</h4>
                 <h1 class="mb-5 display-3">Chương Trình Học Tập Đặc Biệt Dành Cho Học Sinh</h1>
@@ -284,8 +284,8 @@
                             <div class="d-flex justify-content-between px-4 py-2 bg-secondary">
                                 <small class="text-white"><i class="fas fa-calendar me-1 text-primary"></i> 10:00am -
                                     12:00pm</small>
-                                <small class="text-white"><i class="fas fa-map-marker-alt me-1 text-primary"></i> New
-                                    York</small>
+                                <small class="text-white"><i class="fas fa-map-marker-alt me-1 text-primary"></i> Hà
+                                    Nội</small>
                             </div>
                         </div>
                         <div class="events-text p-4 border border-primary bg-white border-top-0 rounded-bottom">
@@ -310,8 +310,8 @@
                             <div class="d-flex justify-content-between px-4 py-2 bg-secondary">
                                 <small class="text-white"><i class="fas fa-calendar me-1 text-primary"></i> 10:00am -
                                     12:00pm</small>
-                                <small class="text-white"><i class="fas fa-map-marker-alt me-1 text-primary"></i> New
-                                    York</small>
+                                <small class="text-white"><i class="fas fa-map-marker-alt me-1 text-primary"></i> Hà
+                                    Nội</small>
                             </div>
                         </div>
                         <div class="events-text p-4 border border-primary bg-white border-top-0 rounded-bottom">
@@ -336,8 +336,8 @@
                             <div class="d-flex justify-content-between px-4 py-2 bg-secondary">
                                 <small class="text-white"><i class="fas fa-calendar me-1 text-primary"></i> 10:00am -
                                     12:00pm</small>
-                                <small class="text-white"><i class="fas fa-map-marker-alt me-1 text-primary"></i> New
-                                    York</small>
+                                <small class="text-white"><i class="fas fa-map-marker-alt me-1 text-primary"></i> Hà
+                                    Nội</small>
                             </div>
                         </div>
                         <div class="events-text p-4 border border-primary bg-white border-top-0 rounded-bottom">
@@ -357,7 +357,7 @@
     <!-- Blog Start-->
     <div class="container-fluid blog py-5">
         <div class="container py-5">
-            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
                     Tin tức và Blog mới nhất</h4>
                 <h1 class="mb-5 display-3">Đọc tin tức và Blog mới nhất của chúng tôi</h1>
@@ -383,15 +383,14 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="text-primary">Mary Mordern</h6>
-                                <p class="text-muted">Baby Care</p>
+                                <p class="text-muted">VietTutor</p>
                             </div>
                         </div>
                         <div class="px-4 pb-4 bg-light rounded-bottom">
                             <div class="blog-text-inner">
                                 <a href="#" class="h4">Làm thế nào để chú ý đến việc học của con?</a>
                                 <p class="mt-3 mb-4">Để giúp con tập trung vào việc học, cha mẹ cần tạo một môi trường học
-                                    tập thoải mái, khuyến khích và đồng hành cùng con trong suốt quá trình học. Hãy lắng
-                                    nghe và hỗ trợ con khi gặp khó khăn để tăng động lực học tập.</p>
+                                    tập thoải mái, khuyến khích và đồng hành cùng con.</p>
                             </div>
                             <div class="text-center">
                                 <a href="#" class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius">Xem
@@ -420,15 +419,14 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="text-primary">Mary Mordern</h6>
-                                <p class="text-muted">Baby Care</p>
+                                <p class="text-muted">VietTutor</p>
                             </div>
                         </div>
                         <div class="px-4 pb-4 bg-light rounded-bottom">
                             <div class="blog-text-inner">
                                 <a href="#" class="h4">Khuyến khích trẻ chơi thể thao ngoài trời.</a>
                                 <p class="mt-3 mb-4">Khuyến khích trẻ tham gia thể thao ngoài trời giúp phát triển thể
-                                    chất, cải thiện sức khỏe và tăng cường kỹ năng giao tiếp. Ngoài ra, hoạt động này còn
-                                    giúp trẻ rèn luyện tính kiên trì và tinh thần đồng đội.</p>
+                                    chất, cải thiện sức khỏe và tăng cường kỹ năng giao tiếp.</p>
                             </div>
                             <div class="text-center">
                                 <a href="#" class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius">Xem
@@ -457,15 +455,14 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="text-primary">Mary Mordern</h6>
-                                <p class="text-muted">Baby Care</p>
+                                <p class="text-muted">VietTutor</p>
                             </div>
                         </div>
                         <div class="px-4 pb-4 bg-light rounded-bottom">
                             <div class="blog-text-inner">
                                 <a href="#" class="h4">Cách quản lý thời gian học tập hiệu quả.</a>
                                 <p class="mt-3 mb-4">Quản lý thời gian học tập hiệu quả giúp trẻ xây dựng thói quen học đều
-                                    đặn, tránh căng thẳng và đạt kết quả tốt. Việc lập kế hoạch, phân chia thời gian hợp lý
-                                    và tạo môi trường học tập yên tĩnh là chìa khóa quan trọng.</p>
+                                    đặn, tránh căng thẳng và đạt kết quả tốt.</p>
                             </div>
                             <div class="text-center">
                                 <a href="#" class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius">Xem
@@ -489,7 +486,32 @@
                 <h1 class="mb-5 display-3">Gặp Gỡ Đội Ngũ Gia Sư Chuyên Nghiệp</h1>
             </div>
             <div class="row g-5 justify-content-center">
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                @foreach ($listTutor as $tutor)
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="team-item border border-primary img-border-radius overflow-hidden">
+                            <!-- Sử dụng profile_image nếu có, nếu không thì hiển thị ảnh mặc định -->
+                            <img src="{{ $tutor->profile_image ? asset($tutor->profile_image) : url('assets_client/img/team-1.jpg') }}"
+                                class="img-fluid w-100" alt="{{ $tutor->user->name }}">
+
+                            <div class="team-icon d-flex align-items-center justify-content-center">
+                                <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3"
+                                    href=""><i class="fas fa-share-alt"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3"
+                                    href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3"
+                                    href=""><i class="fab fa-twitter"></i></a>
+                                <a class="share-link btn btn-primary btn-md-square text-white rounded-circle"
+                                    href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+
+                            <div class="team-content text-center py-3">
+                                <h4 class="text-primary">{{ $tutor->user->name }}</h4>
+                                <p class="text-muted mb-2">{{ $tutor->specialties }}</p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+                {{-- <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
                     <div class="team-item border border-primary img-border-radius overflow-hidden">
                         <img src="{{ url('') }}/assets_client/img/team-1.jpg" class="img-fluid w-100"
                             alt="">
@@ -568,7 +590,7 @@
                             <p class="text-muted mb-2">English Teacher</p>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
@@ -596,8 +618,8 @@
                                     alt="">
                             </div>
                             <div class="ms-4">
-                                <h4 class="text-dark">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
+                                <h4 class="text-dark">Nguyễn Văn Hòa</h4>
+                                <p class="m-0 pb-3">Kỹ sư xây dựng</p>
                                 <div class="d-flex pe-5">
                                     <i class="fas fa-star text-primary"></i>
                                     <i class="fas fa-star text-primary"></i>
@@ -608,8 +630,8 @@
                             </div>
                         </div>
                         <div class="border-top border-primary mt-4 pt-3">
-                            <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the
-                                industry's standard dummy text ever since the 1500s,
+                            <p class="mb-0">Gia sư rất tận tâm, luôn đúng giờ và có phương pháp giảng dạy dễ hiểu. Con
+                                trai tôi tiến bộ rõ rệt trong môn Toán sau 3 tháng học. Tôi rất hài lòng!
                             </p>
                         </div>
                     </div>
@@ -626,8 +648,8 @@
                                     alt="">
                             </div>
                             <div class="ms-4">
-                                <h4 class="text-dark">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
+                                <h4 class="text-dark">Trần Thị Lan</h4>
+                                <p class="m-0 pb-3">Giáo viên tiểu học</p>
                                 <div class="d-flex pe-5">
                                     <i class="fas fa-star text-primary"></i>
                                     <i class="fas fa-star text-primary"></i>
@@ -638,8 +660,9 @@
                             </div>
                         </div>
                         <div class="border-top border-primary mt-4 pt-3">
-                            <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the
-                                industry's standard dummy text ever since the 1500s,
+                            <p class="mb-0">Là một giáo viên, tôi thấy gia sư này có kỹ năng truyền đạt tốt, biết cách
+                                lắng nghe và giải đáp thắc mắc của học sinh. Tuy nhiên, nếu có thêm bài tập về nhà chi tiết
+                                hơn thì sẽ hoàn hảo.
                             </p>
                         </div>
                     </div>
@@ -656,8 +679,8 @@
                                     alt="">
                             </div>
                             <div class="ms-4">
-                                <h4 class="text-dark">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
+                                <h4 class="text-dark">Phạm Minh Tuấn</h4>
+                                <p class="m-0 pb-3">Chủ quán cà phê</p>
                                 <div class="d-flex pe-5">
                                     <i class="fas fa-star text-primary"></i>
                                     <i class="fas fa-star text-primary"></i>
@@ -668,8 +691,9 @@
                             </div>
                         </div>
                         <div class="border-top border-primary mt-4 pt-3">
-                            <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the
-                                industry's standard dummy text ever since the 1500s,
+                            <p class="mb-0">Tôi rất ấn tượng với sự kiên nhẫn của gia sư. Con gái tôi từng rất ngại học
+                                tiếng Anh, nhưng giờ cháu đã tự tin hơn rất nhiều. Tôi cảm thấy quyết định thuê gia sư là
+                                đúng đắn.
                             </p>
                         </div>
                     </div>
