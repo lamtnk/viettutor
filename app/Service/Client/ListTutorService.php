@@ -5,7 +5,7 @@ namespace App\Service\Client;
 use App\Models\TutorProfile;
 use App\Models\User;
 
-class TutorTableService
+class ListTutorService
 {
 
     public function getAll() {

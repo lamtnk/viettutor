@@ -89,7 +89,7 @@
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0 bg-secondary rounded-0">
                                 <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                <a href="{{ route('tblTutor.index') }}" class="dropdown-item">Our Team</a>
+                                <a href="{{ route('list-tutor.index') }}" class="dropdown-item">Our Team</a>
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
