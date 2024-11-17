@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\TutorController;
 use App\Http\Controllers\Client\HomeController;
+use App\Http\Controllers\Client\ListTutorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,4 +27,10 @@ Route::prefix('admin')->group(function () {
 
 Route::prefix('/')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home.index');
+});
+// Route::get('/tblTutor', function () {
+//     return view('client.tblTutor.tutor');
+// });
+Route::prefix('list-tutor')->group(function () {
+    Route::get('/', [ListTutorController::class, 'index'])->name('list-tutor.index');
 });

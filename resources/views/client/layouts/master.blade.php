@@ -16,6 +16,7 @@
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -27,6 +28,8 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{url('')}}/assets_client/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Css về thẻ Gia sư -->
+    <link rel="stylesheet" href="{{ url('') }}/assets/css/pages/layoutTutorInfo.css">
     <!-- Template Stylesheet -->
     <link href="{{url('')}}/assets_client/css/style.css" rel="stylesheet">
 
@@ -86,7 +89,7 @@
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0 bg-secondary rounded-0">
                                 <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="{{ route('list-tutor.index') }}" class="dropdown-item">Our Team</a>
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
@@ -136,6 +139,7 @@
     </div>
     <!-- Modal Search End -->
     @yield('main')
+    @yield('tutor')
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
