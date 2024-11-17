@@ -6,10 +6,10 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-7 col-md-12">
-                    <h1 class="mb-3 text-primary">We Care Your Baby</h1>
-                    <h1 class="mb-5 display-1 text-white">The Best Play Area For Your Kids</h1>
-                    <a href="" class="btn btn-primary px-4 py-3 px-md-5  me-4 btn-border-radius">Get Started</a>
-                    <a href="" class="btn btn-primary px-4 py-3 px-md-5 btn-border-radius">Learn More</a>
+                    <h1 class="mb-3 text-primary display-5">Chúng Tôi Quan Tâm Tương Lai Của Con Bạn</h1>
+                    <h1 class="mb-5 display-1 text-white">"Nền tảng kết nối gia sư với học viên tốt nhất.</h1>
+                    <a href="" class="btn btn-primary px-4 py-3 px-md-5  me-4 btn-border-radius">Bắt Đầu Ngay</a>
+                    <a href="" class="btn btn-primary px-4 py-3 px-md-5 btn-border-radius">Tìm Hiểu Thêm</a>
                 </div>
             </div>
         </div>
@@ -32,27 +32,27 @@
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
                     <h4
                         class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
-                        About Us</h4>
-                    <h1 class="text-dark mb-4 display-5">We Learn Smart Way To Build Bright Futute For Your Children</h1>
-                    <p class="text-dark mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. the
-                        printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                        since the 1500s, when an unknown printer Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s.
+                        Giới thiệu về chúng tôi</h4>
+                    <h1 class="text-dark mb-4 display-5">Phương pháp học tập thông minh để xây dựng tương lai sáng cho con
+                        bạn.</h1>
+                    <p class="text-dark mb-4">Chúng tôi cung cấp các chương trình gia sư linh hoạt, được thiết kế riêng để
+                        hỗ trợ trẻ phát triển toàn diện cả về học tập và kỹ năng sống. Hợp tác cùng đội ngũ gia sư tận tâm
+                        và giàu kinh nghiệm.
                     </p>
                     <div class="row mb-4">
                         <div class="col-lg-6">
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Sport Activites</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Outdoor Games</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Nutritious Foods</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Học theo lộ trình cá nhân</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Thời gian linh hoạt</h6>
+                            {{-- <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Nutritious Foods</h6> --}}
                         </div>
                         <div class="col-lg-6">
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Highly Secured</h6>
-                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Friendly Environment
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Đội ngũ gia sư chất lượng cao</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Cam kết tiến bộ rõ rệt
                             </h6>
-                            <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Qualified Teacher</h6>
+                            {{-- <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Qualified Teacher</h6> --}}
                         </div>
                     </div>
-                    <a href="" class="btn btn-primary px-5 py-3 btn-border-radius">More Details</a>
+                    <a href="" class="btn btn-primary px-5 py-3 btn-border-radius">Xem Chi Tiết</a>
                 </div>
             </div>
         </div>
@@ -83,8 +83,8 @@
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
-                    What We Do</h4>
-                <h1 class="mb-5 display-3">Thanks To Get Started With Our School</h1>
+                    Chúng Tôi Làm Gì</h4>
+                <h1 class="mb-5 display-3">Bắt Đầu Hành Trình Học Tập Cùng Viettutor</h1>
             </div>
             <div class="row g-5">
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
@@ -92,12 +92,10 @@
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
                                 <div class="p-4"><i class="fas fa-gamepad fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">Study & Game</a>
-                                <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, culpa qui
-                                    officiis animi Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read
-                                    More</a>
+                                <a href="#" class="h4">Học Tập & Vui chơi:</a>
+                                <p class="my-3">Phát triển tư duy và kỹ năng qua các hoạt động học tập thú vị.</p>
+                                <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Xem
+                                    thêm</a>
                             </div>
                         </div>
                     </div>
@@ -107,12 +105,10 @@
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
                                 <div class="p-4"><i class="fas fa-sort-alpha-down fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">A to Z Programs</a>
-                                <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, culpa qui
-                                    officiis animi Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read
-                                    More</a>
+                                <a href="#" class="h4">Chương Trình Từ A đến Z:</a>
+                                <p class="my-3">Cung cấp đa dạng môn học từ tiểu học đến đại học.</p>
+                                <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Xem
+                                    thêm</a>
                             </div>
                         </div>
                     </div>
@@ -122,12 +118,10 @@
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
                                 <div class="p-4"><i class="fas fa-users fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">Expert Teacher</a>
-                                <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, culpa
-                                    qui officiis animi Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read
-                                    More</a>
+                                <a href="#" class="h4">Gia Sư Chuyên Nghiệp:</a>
+                                <p class="my-3">Đội ngũ gia sư được chọn lọc, giàu kinh nghiệm.</p>
+                                <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Xem
+                                    thêm</a>
                             </div>
                         </div>
                     </div>
@@ -137,12 +131,10 @@
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
                                 <div class="p-4"><i class="fas fa-user-nurse fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">Mental Health</a>
-                                <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, culpa
-                                    qui officiis animi Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read
-                                    More</a>
+                                <a href="#" class="h4">Quan Tâm Tinh Thần:</a>
+                                <p class="my-3">Chăm sóc sức khỏe tinh thần và động viên trẻ học tập hiệu quả.</p>
+                                <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Xêm
+                                    thêm</a>
                             </div>
                         </div>
                     </div>
@@ -158,28 +150,28 @@
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
-                    Our Programs</h4>
-                <h1 class="mb-5 display-3">We Offer An Exclusive Program For Kids</h1>
+                    Chương trình của chúng tôi</h4>
+                <h1 class="mb-5 display-3">Chương Trình Học Tập Đặc Biệt Dành Cho Học Sinh</h1>
             </div>
             <div class="row g-5 justify-content-center">
                 <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.1s">
                     <div class="program-item rounded">
                         <div class="program-img position-relative">
                             <div class="overflow-hidden img-border-radius">
-                                <img src="{{url('')}}/assets_client/img/program-1.jpg" class="img-fluid w-100" alt="Image">
+                                <img src="{{ url('') }}/assets_client/img/program-1.jpg" class="img-fluid w-100"
+                                    alt="Image">
                             </div>
                             <div class="px-4 py-2 bg-primary text-white program-rate">$60.99</div>
                         </div>
                         <div class="program-text bg-white px-4 pb-3">
                             <div class="program-text-inner">
-                                <a href="#" class="h4">English For Today</a>
-                                <p class="mt-3 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
-                                    purus consectetur,</p>
+                                <a href="#" class="h4">Anh Văn:</a>
+                                <p class="mt-3 mb-0">Củng cố kiến thức Anh văn, cải thiện kỹ năng giao tiếp.</p>
                             </div>
                         </div>
                         <div
                             class="program-teacher d-flex align-items-center border-top border-primary bg-white px-4 py-3">
-                            <img src="{{url('')}}/assets_client/img/program-teacher.jpg"
+                            <img src="{{ url('') }}/assets_client/img/program-teacher.jpg"
                                 class="img-fluid rounded-circle p-2 border border-primary bg-white" alt="Image"
                                 style="width: 70px; height: 70px;">
                             <div class="ms-3">
@@ -188,9 +180,9 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-between px-4 py-2 bg-primary rounded-bottom">
-                            <small class="text-white"><i class="fas fa-wheelchair me-1"></i> 30 Sits</small>
-                            <small class="text-white"><i class="fas fa-book me-1"></i> 11 Lessons</small>
-                            <small class="text-white"><i class="fas fa-clock me-1"></i> 60 Hours</small>
+                            <small class="text-white"><i class="fas fa-wheelchair me-1"></i> 30 buổi</small>
+                            <small class="text-white"><i class="fas fa-book me-1"></i> 11 chủ đề</small>
+                            <small class="text-white"><i class="fas fa-clock me-1"></i> 60 giờ</small>
                         </div>
                     </div>
                 </div>
@@ -198,20 +190,20 @@
                     <div class="program-item rounded">
                         <div class="program-img position-relative">
                             <div class="overflow-hidden img-border-radius">
-                                <img src="{{url('')}}/assets_client/img/program-2.jpg" class="img-fluid w-100" alt="Image">
+                                <img src="{{ url('') }}/assets_client/img/program-2.jpg" class="img-fluid w-100"
+                                    alt="Image">
                             </div>
                             <div class="px-4 py-2 bg-primary text-white program-rate">$60.99</div>
                         </div>
                         <div class="program-text bg-white px-4 pb-3">
                             <div class="program-text-inner">
-                                <a href="#" class="h4">Graphics Arts</a>
-                                <p class="mt-3 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
-                                    purus consectetur,</p>
+                                <a href="#" class="h4">Mỹ Thuật:</a>
+                                <p class="mt-3 mb-0">Khai phá tài năng hội họa và sáng tạo của trẻ.</p>
                             </div>
                         </div>
                         <div
                             class="program-teacher d-flex align-items-center border-top border-primary bg-white px-4 py-3">
-                            <img src="{{url('')}}/assets_client/img/program-teacher.jpg"
+                            <img src="{{ url('') }}/assets_client/img/program-teacher.jpg"
                                 class="img-fluid rounded-circle p-2 border border-primary bg-white" alt=""
                                 style="width: 70px; height: 70px;">
                             <div class="ms-3">
@@ -220,9 +212,9 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-between px-4 py-2 bg-primary rounded-bottom">
-                            <small class="text-white"><i class="fas fa-wheelchair me-1"></i> 30 Sits</small>
-                            <small class="text-white"><i class="fas fa-book me-1"></i> 11 Lessons</small>
-                            <small class="text-white"><i class="fas fa-clock me-1"></i> 60 Hours</small>
+                            <small class="text-white"><i class="fas fa-wheelchair me-1"></i> 30 buổi</small>
+                            <small class="text-white"><i class="fas fa-book me-1"></i> 11 chủ đề</small>
+                            <small class="text-white"><i class="fas fa-clock me-1"></i> 60 giờ</small>
                         </div>
                     </div>
                 </div>
@@ -230,20 +222,20 @@
                     <div class="program-item rounded">
                         <div class="program-img position-relative">
                             <div class="overflow-hidden img-border-radius">
-                                <img src="{{url('')}}/assets_client/img/program-3.jpg" class="img-fluid w-100" alt="Image">
+                                <img src="{{ url('') }}/assets_client/img/program-3.jpg" class="img-fluid w-100"
+                                    alt="Image">
                             </div>
                             <div class="px-4 py-2 bg-primary text-white program-rate">$60.99</div>
                         </div>
                         <div class="program-text bg-white px-4 pb-3">
                             <div class="program-text-inner">
-                                <a href="#" class="h4">General Science</a>
-                                <p class="mt-3 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
-                                    purus consectetur,</p>
+                                <a href="#" class="h4">Khoa Học:</a>
+                                <p class="mt-3 mb-0">Học thông qua thí nghiệm thực tế và bài học thú vị.</p>
                             </div>
                         </div>
                         <div
                             class="program-teacher d-flex align-items-center border-top border-primary bg-white px-4 py-3">
-                            <img src="{{url('')}}/assets_client/img/program-teacher.jpg"
+                            <img src="{{ url('') }}/assets_client/img/program-teacher.jpg"
                                 class="img-fluid rounded-circle p-2 border border-primary bg-white" alt=""
                                 style="width: 70px; height: 70px;">
                             <div class="ms-3">
@@ -252,14 +244,15 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-between px-4 py-2 bg-primary rounded-bottom">
-                            <small class="text-white"><i class="fas fa-wheelchair me-1"></i> 30 Sits</small>
-                            <small class="text-white"><i class="fas fa-book me-1"></i> 11 Lessons</small>
-                            <small class="text-white"><i class="fas fa-clock me-1"></i> 60 Hours</small>
+                            <small class="text-white"><i class="fas fa-wheelchair me-1"></i> 30 buổi</small>
+                            <small class="text-white"><i class="fas fa-book me-1"></i> 11 chủ đề</small>
+                            <small class="text-white"><i class="fas fa-clock me-1"></i> 60 giờ</small>
                         </div>
                     </div>
                 </div>
                 <div class="d-inline-block text-center wow fadeIn" data-wow-delay="0.1s">
-                    <a href="#" class="btn btn-primary px-5 py-3 text-white btn-border-radius">Vew All Programs</a>
+                    <a href="#" class="btn btn-primary px-5 py-3 text-white btn-border-radius">Xem Tất Cả Chương
+                        Trình</a>
                 </div>
             </div>
         </div>
@@ -272,21 +265,22 @@
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
-                    Our Events</h4>
-                <h1 class="mb-5 display-3">Our Upcoming Events</h1>
+                    Sự kiện</h4>
+                <h1 class="mb-5 display-3">Sự Kiện Nổi Bật</h1>
             </div>
             <div class="row g-5 justify-content-center">
                 <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.1s">
                     <div class="events-item bg-primary rounded">
                         <div class="events-inner position-relative">
                             <div class="events-img overflow-hidden rounded-circle position-relative">
-                                <img src="{{url('')}}/assets_client/img/event-1.jpg" class="img-fluid w-100 rounded-circle" alt="Image">
+                                <img src="{{ url('') }}/assets_client/img/event-1.jpg"
+                                    class="img-fluid w-100 rounded-circle" alt="Image">
                                 <div class="event-overlay">
                                     <a href="img/event-1.jpg" data-lightbox="event-1"><i
                                             class="fas fa-search-plus text-white fa-2x"></i></a>
                                 </div>
                             </div>
-                            <div class="px-4 py-2 bg-secondary text-white text-center events-rate">29 Nov</div>
+                            <div class="px-4 py-2 bg-secondary text-white text-center events-rate">29/11</div>
                             <div class="d-flex justify-content-between px-4 py-2 bg-secondary">
                                 <small class="text-white"><i class="fas fa-calendar me-1 text-primary"></i> 10:00am -
                                     12:00pm</small>
@@ -295,9 +289,9 @@
                             </div>
                         </div>
                         <div class="events-text p-4 border border-primary bg-white border-top-0 rounded-bottom">
-                            <a href="#" class="h4">Music & drawing workshop</a>
-                            <p class="mb-0 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed purus
-                                consectetur,</p>
+                            <a href="#" class="h4">Hội thảo vẽ tranh & âm nhạc</a>
+                            <p class="mb-0 mt-3">Tham gia hội thảo vẽ tranh & âm nhạc để khám phá sự sáng tạo qua sắc màu
+                                và giai điệu. Một trải nghiệm nghệ thuật độc đáo dành cho mọi lứa tuổi!</p>
                         </div>
                     </div>
                 </div>
@@ -305,13 +299,14 @@
                     <div class="events-item bg-primary rounded">
                         <div class="events-inner position-relative">
                             <div class="events-img overflow-hidden rounded-circle position-relative">
-                                <img src="{{url('')}}/assets_client/img/event-2.jpg" class="img-fluid w-100 rounded-circle" alt="Image">
+                                <img src="{{ url('') }}/assets_client/img/event-2.jpg"
+                                    class="img-fluid w-100 rounded-circle" alt="Image">
                                 <div class="event-overlay">
                                     <a href="img/event-3.jpg" data-lightbox="event-1"><i
                                             class="fas fa-search-plus text-white fa-2x"></i></a>
                                 </div>
                             </div>
-                            <div class="px-4 py-2 bg-secondary text-white text-center events-rate">29 Nov</div>
+                            <div class="px-4 py-2 bg-secondary text-white text-center events-rate">29/11</div>
                             <div class="d-flex justify-content-between px-4 py-2 bg-secondary">
                                 <small class="text-white"><i class="fas fa-calendar me-1 text-primary"></i> 10:00am -
                                     12:00pm</small>
@@ -320,9 +315,9 @@
                             </div>
                         </div>
                         <div class="events-text p-4 border border-primary bg-white border-top-0 rounded-bottom">
-                            <a href="#" class="h4">Why need study</a>
-                            <p class="mb-0 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed purus
-                                consectetur,</p>
+                            <a href="#" class="h4">Tại sao học là cần thiết?</a>
+                            <p class="mb-0 mt-3">Học tập là chìa khóa mở ra tri thức và cơ hội. Nó giúp bạn phát triển bản
+                                thân, đạt được mục tiêu và xây dựng một tương lai tươi sáng.</p>
                         </div>
                     </div>
                 </div>
@@ -330,13 +325,14 @@
                     <div class="events-item bg-primary rounded">
                         <div class="events-inner position-relative">
                             <div class="events-img overflow-hidden rounded-circle position-relative">
-                                <img src="{{url('')}}/assets_client/img/event-3.jpg" class="img-fluid w-100 rounded-circle" alt="Image">
+                                <img src="{{ url('') }}/assets_client/img/event-3.jpg"
+                                    class="img-fluid w-100 rounded-circle" alt="Image">
                                 <div class="event-overlay">
                                     <a href="img/event-3.jpg" data-lightbox="event-1"><i
                                             class="fas fa-search-plus text-white fa-2x"></i></a>
                                 </div>
                             </div>
-                            <div class="px-4 py-2 bg-secondary text-white text-center events-rate">29 Nov</div>
+                            <div class="px-4 py-2 bg-secondary text-white text-center events-rate">29/11</div>
                             <div class="d-flex justify-content-between px-4 py-2 bg-secondary">
                                 <small class="text-white"><i class="fas fa-calendar me-1 text-primary"></i> 10:00am -
                                     12:00pm</small>
@@ -345,9 +341,10 @@
                             </div>
                         </div>
                         <div class="events-text p-4 border border-primary bg-white border-top-0 rounded-bottom">
-                            <a href="#" class="h4">Child health consciousness</a>
-                            <p class="mb-0 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed purus
-                                consectetur,</p>
+                            <a href="#" class="h4">Nhận thức về sức khỏe của trẻ em</a>
+                            <p class="mb-0 mt-3">Nhận thức về sức khỏe của trẻ em là nền tảng cho sự phát triển toàn diện.
+                                Hãy cùng xây dựng thói quen sống lành mạnh để trẻ em có một tương lai khỏe mạnh và hạnh
+                                phúc.</p>
                         </div>
                     </div>
                 </div>
@@ -362,25 +359,26 @@
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
-                    Latest News & Blog</h4>
-                <h1 class="mb-5 display-3">Read Our Latest News & Blog</h1>
+                    Tin tức và Blog mới nhất</h4>
+                <h1 class="mb-5 display-3">Đọc tin tức và Blog mới nhất của chúng tôi</h1>
             </div>
             <div class="row g-5 justify-content-center">
                 <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.1s">
                     <div class="blog-item rounded-bottom">
                         <div class="blog-img overflow-hidden position-relative img-border-radius">
-                            <img src="{{url('')}}/assets_client/img/blog-1.jpg" class="img-fluid w-100" alt="Image">
+                            <img src="{{ url('') }}/assets_client/img/blog-1.jpg" class="img-fluid w-100"
+                                alt="Image">
                         </div>
                         <div
                             class="d-flex justify-content-between px-4 py-3 bg-light border-bottom border-primary blog-date-comments">
-                            <small class="text-dark"><i class="fas fa-calendar me-1 text-dark"></i> 29 Nov 2023</small>
-                            <small class="text-dark"><i class="fas fa-comment-alt me-1 text-dark"></i> Comments
+                            <small class="text-dark"><i class="fas fa-calendar me-1 text-dark"></i> 29/11/2023</small>
+                            <small class="text-dark"><i class="fas fa-comment-alt me-1 text-dark"></i> Bình luận
                                 (15)</small>
                         </div>
                         <div class="blog-content d-flex align-items-center px-4 py-3 bg-light">
                             <div class="overflow-hidden rounded-circle rounded-top border border-primary">
-                                <img src="{{url('')}}/assets_client/img/program-teacher.jpg" class="img-fluid rounded-circle p-2 rounded-top"
-                                    alt="Image"
+                                <img src="{{ url('') }}/assets_client/img/program-teacher.jpg"
+                                    class="img-fluid rounded-circle p-2 rounded-top" alt="Image"
                                     style="width: 70px; height: 70px; border-style: dotted; border-color: var(--bs-primary) !important;">
                             </div>
                             <div class="ms-3">
@@ -390,13 +388,14 @@
                         </div>
                         <div class="px-4 pb-4 bg-light rounded-bottom">
                             <div class="blog-text-inner">
-                                <a href="#" class="h4">How to pay attention to your child?</a>
-                                <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
-                                    purus</p>
+                                <a href="#" class="h4">Làm thế nào để chú ý đến việc học của con?</a>
+                                <p class="mt-3 mb-4">Để giúp con tập trung vào việc học, cha mẹ cần tạo một môi trường học
+                                    tập thoải mái, khuyến khích và đồng hành cùng con trong suốt quá trình học. Hãy lắng
+                                    nghe và hỗ trợ con khi gặp khó khăn để tăng động lực học tập.</p>
                             </div>
                             <div class="text-center">
-                                <a href="#" class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius">View
-                                    Details</a>
+                                <a href="#" class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius">Xem
+                                    chi tiết</a>
                             </div>
                         </div>
                     </div>
@@ -404,18 +403,19 @@
                 <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.3s">
                     <div class="blog-item rounded-bottom">
                         <div class="blog-img overflow-hidden position-relative img-border-radius">
-                            <img src="{{url('')}}/assets_client/img/blog-2.jpg" class="img-fluid w-100" alt="Image">
+                            <img src="{{ url('') }}/assets_client/img/blog-2.jpg" class="img-fluid w-100"
+                                alt="Image">
                         </div>
                         <div
                             class="d-flex justify-content-between px-4 py-3 bg-light border-bottom border-primary blog-date-comments">
-                            <small class="text-dark"><i class="fas fa-calendar me-1 text-dark"></i> 29 Nov 2023</small>
-                            <small class="text-dark"><i class="fas fa-comment-alt me-1 text-dark"></i> Comments
+                            <small class="text-dark"><i class="fas fa-calendar me-1 text-dark"></i> 29/11/2023</small>
+                            <small class="text-dark"><i class="fas fa-comment-alt me-1 text-dark"></i> Bình luận
                                 (15)</small>
                         </div>
                         <div class="blog-content d-flex align-items-center px-4 py-3 bg-light">
                             <div class="overflow-hidden rounded-circle rounded-top border border-primary">
-                                <img src="{{url('')}}/assets_client/img/program-teacher.jpg" class="img-fluid rounded-circle p-2 rounded-top"
-                                    alt=""
+                                <img src="{{ url('') }}/assets_client/img/program-teacher.jpg"
+                                    class="img-fluid rounded-circle p-2 rounded-top" alt=""
                                     style="width: 70px; height: 70px; border-style: dotted; border-color: var(--bs-primary) !important;">
                             </div>
                             <div class="ms-3">
@@ -425,13 +425,14 @@
                         </div>
                         <div class="px-4 pb-4 bg-light rounded-bottom">
                             <div class="blog-text-inner">
-                                <a href="#" class="h4">Play outdoor sports with your child</a>
-                                <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
-                                    purus</p>
+                                <a href="#" class="h4">Khuyến khích trẻ chơi thể thao ngoài trời.</a>
+                                <p class="mt-3 mb-4">Khuyến khích trẻ tham gia thể thao ngoài trời giúp phát triển thể
+                                    chất, cải thiện sức khỏe và tăng cường kỹ năng giao tiếp. Ngoài ra, hoạt động này còn
+                                    giúp trẻ rèn luyện tính kiên trì và tinh thần đồng đội.</p>
                             </div>
                             <div class="text-center">
-                                <a href="#" class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius">View
-                                    Details</a>
+                                <a href="#" class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius">Xem
+                                    chi tiết</a>
                             </div>
                         </div>
                     </div>
@@ -439,18 +440,19 @@
                 <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.5s">
                     <div class="blog-item rounded-bottom">
                         <div class="blog-img overflow-hidden position-relative img-border-radius">
-                            <img src="{{url('')}}/assets_client/img/blog-3.jpg" class="img-fluid w-100" alt="Image">
+                            <img src="{{ url('') }}/assets_client/img/blog-3.jpg" class="img-fluid w-100"
+                                alt="Image">
                         </div>
                         <div
                             class="d-flex justify-content-between px-4 py-3 bg-light border-bottom border-primary blog-date-comments">
-                            <small class="text-dark"><i class="fas fa-calendar me-1 text-dark"></i> 29 Nov 2023</small>
-                            <small class="text-dark"><i class="fas fa-comment-alt me-1 text-dark"></i> Comments
+                            <small class="text-dark"><i class="fas fa-calendar me-1 text-dark"></i> 29/11/2023</small>
+                            <small class="text-dark"><i class="fas fa-comment-alt me-1 text-dark"></i> Bình luận
                                 (15)</small>
                         </div>
                         <div class="blog-content d-flex align-items-center px-4 py-3 bg-light">
                             <div class="overflow-hidden rounded-circle rounded-top border border-primary">
-                                <img src="{{url('')}}/assets_client/img/program-teacher.jpg" class="img-fluid rounded-circle p-2 rounded-top"
-                                    alt=""
+                                <img src="{{ url('') }}/assets_client/img/program-teacher.jpg"
+                                    class="img-fluid rounded-circle p-2 rounded-top" alt=""
                                     style="width: 70px; height: 70px; border-style: dotted; border-color: var(--bs-primary) !important;">
                             </div>
                             <div class="ms-3">
@@ -460,13 +462,14 @@
                         </div>
                         <div class="px-4 pb-4 bg-light rounded-bottom">
                             <div class="blog-text-inner">
-                                <a href="#" class="h4">How to make time for your kids?</a>
-                                <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
-                                    purus</p>
+                                <a href="#" class="h4">Cách quản lý thời gian học tập hiệu quả.</a>
+                                <p class="mt-3 mb-4">Quản lý thời gian học tập hiệu quả giúp trẻ xây dựng thói quen học đều
+                                    đặn, tránh căng thẳng và đạt kết quả tốt. Việc lập kế hoạch, phân chia thời gian hợp lý
+                                    và tạo môi trường học tập yên tĩnh là chìa khóa quan trọng.</p>
                             </div>
                             <div class="text-center">
-                                <a href="#" class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius">View
-                                    Details</a>
+                                <a href="#" class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius">Xem
+                                    chi tiết</a>
                             </div>
                         </div>
                     </div>
@@ -482,13 +485,14 @@
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
-                    Our Team</h4>
-                <h1 class="mb-5 display-3">Meet With Our Expert Teacher</h1>
+                    Đội ngũ gia sư của chúng tôi</h4>
+                <h1 class="mb-5 display-3">Gặp Gỡ Đội Ngũ Gia Sư Chuyên Nghiệp</h1>
             </div>
             <div class="row g-5 justify-content-center">
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
                     <div class="team-item border border-primary img-border-radius overflow-hidden">
-                        <img src="{{url('')}}/assets_client/img/team-1.jpg" class="img-fluid w-100" alt="">
+                        <img src="{{ url('') }}/assets_client/img/team-1.jpg" class="img-fluid w-100"
+                            alt="">
                         <div class="team-icon d-flex align-items-center justify-content-center">
                             <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3"
                                 href=""><i class="fas fa-share-alt"></i></a>
@@ -507,7 +511,8 @@
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="team-item border border-primary img-border-radius overflow-hidden">
-                        <img src="{{url('')}}/assets_client/img/team-2.jpg" class="img-fluid w-100" alt="">
+                        <img src="{{ url('') }}/assets_client/img/team-2.jpg" class="img-fluid w-100"
+                            alt="">
                         <div class="team-icon d-flex align-items-center justify-content-center">
                             <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3"
                                 href=""><i class="fas fa-share-alt"></i></a>
@@ -526,7 +531,8 @@
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
                     <div class="team-item border border-primary img-border-radius overflow-hidden">
-                        <img src="{{url('')}}/assets_client/img/team-3.jpg" class="img-fluid w-100" alt="">
+                        <img src="{{ url('') }}/assets_client/img/team-3.jpg" class="img-fluid w-100"
+                            alt="">
                         <div class="team-icon d-flex align-items-center justify-content-center">
                             <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3"
                                 href=""><i class="fas fa-share-alt"></i></a>
@@ -545,7 +551,8 @@
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
                     <div class="team-item border border-primary img-border-radius overflow-hidden">
-                        <img src="{{url('')}}/assets_client/img/team-4.jpg" class="img-fluid w-100" alt="">
+                        <img src="{{ url('') }}/assets_client/img/team-4.jpg" class="img-fluid w-100"
+                            alt="">
                         <div class="team-icon d-flex align-items-center justify-content-center">
                             <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3"
                                 href=""><i class="fas fa-share-alt"></i></a>
@@ -573,8 +580,8 @@
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
-                    Our Testimonials</h4>
-                <h1 class="mb-5 display-3">Parents Say About Us</h1>
+                    Đánh giá từ phụ huynh</h4>
+                <h1 class="mb-5 display-3">Phụ Huynh Nói Gì Về Viettutor?</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.3s">
                 <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
@@ -583,7 +590,8 @@
                             style="top: 15px; right: 15px;"></i>
                         <div class="d-flex align-items-center">
                             <div class="border border-primary bg-white rounded-circle">
-                                <img src="{{url('')}}/assets_client/img/testimonial-2.jpg" class="rounded-circle p-2"
+                                <img src="{{ url('') }}/assets_client/img/testimonial-2.jpg"
+                                    class="rounded-circle p-2"
                                     style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);"
                                     alt="">
                             </div>
@@ -612,7 +620,8 @@
                             style="top: 15px; right: 15px;"></i>
                         <div class="d-flex align-items-center">
                             <div class="border border-primary bg-white rounded-circle">
-                                <img src="{{url('')}}/assets_client/img/testimonial-2.jpg" class="rounded-circle p-2"
+                                <img src="{{ url('') }}/assets_client/img/testimonial-2.jpg"
+                                    class="rounded-circle p-2"
                                     style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);"
                                     alt="">
                             </div>
@@ -641,7 +650,8 @@
                             style="top: 15px; right: 15px;"></i>
                         <div class="d-flex align-items-center">
                             <div class="border border-primary bg-white rounded-circle">
-                                <img src="{{url('')}}/assets_client/img/testimonial-2.jpg" class="rounded-circle p-2"
+                                <img src="{{ url('') }}/assets_client/img/testimonial-2.jpg"
+                                    class="rounded-circle p-2"
                                     style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);"
                                     alt="">
                             </div>
