@@ -6,5 +6,8 @@ use App\Models\TutorProfile;
 
 class HomeService
 {
-    
+    public function getAll()
+    {
+        return TutorProfile::all();
+    }
 }
