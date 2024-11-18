@@ -1,6 +1,6 @@
 @extends('client.layouts.master')
-@section('tutor')
-<div    id="tutor"
+@section('main')
+<div    id="main"
       class="mx-auto text-center wow fadeIn mt-2"
       data-wow-delay="0.1s"
       style="max-width: 600px"
@@ -77,36 +77,19 @@
                         >
                       </h4>
                       <div class="d-flex justify-content-center align-items-center">
-                        <div>
-                          @php
-                          function customRound($number) {
-                              $decimal = $number - intval($number);
-                              if ($decimal >= 0.8) {
-                                  return intval($number) + 1;
-                              } elseif ($decimal >= 0.3) {
-                                  return intval($number) + 0.5;
-                              } else {
-                                  return intval($number);
-                              }
-                          }
-                          $roundedValue = customRound($item->average_rating);
-                          $filledStars = floor($roundedValue);
-                          $hasHalfStar = ($roundedValue - $filledStars) === 0.5;
-                          $emptyStars = 5 - $filledStars - ($hasHalfStar ? 1 : 0);
-                          @endphp
-
+                        <div>                       
                           {{-- Hiển thị sao đầy --}}
-                          @for ($i = 0; $i < $filledStars; $i++)
+                          @for ($i = 0; $i < $item['filledStars']; $i++)
                               <span class="bi bi-star-fill star-checked"></span>
                           @endfor
 
                           {{-- Hiển thị sao nửa --}}
-                          @if ($hasHalfStar)
+                          @if ($item['hasHalfStar'])
                               <span class="bi bi-star-half star-checked"></span>
                           @endif
 
                           {{-- Hiển thị sao trống --}}
-                          @for ($i = 0; $i < $emptyStars; $i++)
+                          @for ($i = 0; $i < $item['emptyStars']; $i++)
                               <span class="bi bi-star"></span>
                           @endfor
                         </div>
