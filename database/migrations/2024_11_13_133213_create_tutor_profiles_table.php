@@ -11,6 +11,7 @@ class CreateTutorProfilesTable extends Migration
         Schema::create('tutor_profiles', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->integer('type')->nullable();
             $table->text('bio')->nullable();
             $table->integer('experience_years')->nullable();
             $table->string('specialties')->nullable();
@@ -20,6 +21,8 @@ class CreateTutorProfilesTable extends Migration
             $table->decimal('min_hourly_rate', 10, 2)->nullable();
             $table->decimal('max_hourly_rate', 10, 2)->nullable();
             $table->string('profile_image')->nullable();
+            $table->integer('area')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamps();
         });
     }

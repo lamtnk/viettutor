@@ -13,6 +13,9 @@ class TutorProfileSeeder extends Seeder
         // Gia sư 1
         TutorProfile::create([
             'user_id' => 2, // ID của gia sư trong UserSeeder
+            'type' => 1,
+            'status' => 1, 
+            'area' => 3, 
             'bio' => 'Kinh nghiệm 5 năm giảng dạy Toán và Lý.',
             'experience_years' => 5,
             'specialties' => 'Toán, Lý',
@@ -27,6 +30,9 @@ class TutorProfileSeeder extends Seeder
         // Gia sư 2
         TutorProfile::create([
             'user_id' => 3, // ID của gia sư trong UserSeeder
+            'type' => 1,
+            'status' => 1, 
+            'area' => 2, 
             'bio' => 'Kinh nghiệm 6 năm giảng dạy Toán và Lý.',
             'experience_years' => 6,
             'specialties' => 'Toán, Lý, Văn',
@@ -41,6 +47,9 @@ class TutorProfileSeeder extends Seeder
         // Gia sư 3
         TutorProfile::create([
             'user_id' => 4, // ID của gia sư trong UserSeeder
+            'type' => 1,
+            'status' => 1, 
+            'area' => 5, 
             'bio' => 'Kinh nghiệm 3 năm giảng dạy Tiếng Anh và Văn.',
             'experience_years' => 3,
             'specialties' => 'Tiếng Anh, Văn',
@@ -56,6 +65,9 @@ class TutorProfileSeeder extends Seeder
         TutorProfile::create([
             'user_id' => 5, // ID của gia sư trong UserSeeder
             'bio' => 'Kinh nghiệm 8 năm giảng dạy Toán và Hóa.',
+            'type' => 1,
+            'status' => 1, 
+            'area' => 7, 
             'experience_years' => 8,
             'specialties' => 'Toán, Hóa',
             'certificates' => 'Bằng Thạc sĩ Toán học',
@@ -69,6 +81,9 @@ class TutorProfileSeeder extends Seeder
         // Gia sư 5
         TutorProfile::create([
             'user_id' => 6, // ID của gia sư trong UserSeeder
+            'type' => 1,
+            'status' => 1, 
+            'area' => 11, 
             'bio' => 'Giảng dạy 2 năm với các khóa học Tiếng Anh cơ bản.',
             'experience_years' => 2,
             'specialties' => 'Tiếng Anh, Ngữ pháp',
@@ -83,6 +98,9 @@ class TutorProfileSeeder extends Seeder
         // Gia sư 6
         TutorProfile::create([
             'user_id' => 7, // ID của gia sư trong UserSeeder
+            'type' => 1,
+            'status' => 1, 
+            'area' => 12, 
             'bio' => 'Giảng dạy 10 năm trong lĩnh vực Vật lý và Khoa học.',
             'experience_years' => 10,
             'specialties' => 'Vật lý, Khoa học',
@@ -97,6 +115,9 @@ class TutorProfileSeeder extends Seeder
         // Gia sư 7
         TutorProfile::create([
             'user_id' => 8, // ID của gia sư trong UserSeeder
+            'type' => 1,
+            'status' => 1, 
+            'area' => 15, 
             'bio' => 'Kinh nghiệm 4 năm giảng dạy Kinh tế và Quản trị.',
             'experience_years' => 4,
             'specialties' => 'Kinh tế, Quản trị',
