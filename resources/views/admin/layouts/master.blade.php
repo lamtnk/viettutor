@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="{{ url('') }}/assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="{{ url('') }}/assets/vendors/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="{{ url('') }}/assets/css/app.css">
+    <link rel="stylesheet" href="{{ url('') }}/assets/css/app.css"> 
     <link rel="shortcut icon" href="{{ url('') }}/assets/images/favicon.svg" type="image/x-icon">
 </head>
 
