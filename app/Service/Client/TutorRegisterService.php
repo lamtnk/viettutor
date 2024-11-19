@@ -28,22 +28,26 @@ class TutorRegisterService
     {
         // Validate dữ liệu
         $validatedData = validator($data, [
-            // 'name' => 'required|string|max:255',
-            // 'phone' => 'required|string|max:20',
-            // 'email' => 'required|email|max:255',
-            // 'gender' => 'required|string',
-            // 'birth_year' => 'required|numeric|min:1900|max:' . now()->year,
-            // 'address' => 'required|string|max:255',
-            'profile_image' => 'required|image|mimes:jpg,jpeg,png|max:2048',
-            'type' => 'required|integer',
-            'bio' => 'required|string|max:1500',
-            'specialties' => 'required|string|max:255',
-            'certificates.*' => 'required|file|mimes:jpg,jpeg,png,pdf|max:2048',
-            'live-area' => 'required|integer',
+            'name' => 'required',
+            'phone' => 'required',
+            'email' => 'required',
+            'gender' => 'required',
+            'birth_year' => 'required',
+            'address' => 'required',
+            'profile_image' => 'required',
+            'type' => 'required',
+            'specialties' => 'required',
+            'live-area' => 'required',
+            'teach-area' => 'required',
+            'bio' => 'required',
+            'identity-card-1' => 'requirerd',
+            'identity-card-2' => 'requirerd',
+            'certificates' => 'required',
         ])->validate();
 
         // Upload ảnh đại diện
-        $profileImagePath = $data['profile_image']->store('public/assets_client/img', 'public');
+        $profileImageName = time() . '_' . $data['profile_image']->getClientOriginalName();
+        $data['profile_image']->move(public_path('assets_client/img/profile_image'), $profileImageName);
 
         // Tạo hồ sơ gia sư
         $tutorProfile = TutorProfile::create([
@@ -53,25 +57,11 @@ class TutorRegisterService
             'specialties' => $validatedData['specialties'],
             'min_hourly_rate' => 0,
             'max_hourly_rate' => 0,
-            'profile_image' => $profileImagePath,
-            'status' => 1,
+            'profile_image' => $profileImageName,
+            'status' => 0,
             'area' => $validatedData['live-area'],
             'type' => $validatedData['type'],
         ]);
-
-        // Lưu các chứng chỉ
-        if (isset($data['certificates']) && is_array($data['certificates'])) {
-            foreach ($data['certificates'] as $certificateFile) {
-                $certificatePath = $certificateFile->store('tutor_certificates', 'public');
-                Certificate::create([
-                    'tutor_profile_id' => $tutorProfile->id,
-                    'title' => 'Certificate',
-                    'image' => $certificatePath,
-                    'issued_date' => now(),
-                    'description' => '',
-                ]);
-            }
-        }
 
         return $tutorProfile;
     }

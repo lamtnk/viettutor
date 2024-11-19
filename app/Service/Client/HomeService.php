@@ -8,6 +8,6 @@ class HomeService
 {
     public function get4Tutor()
     {
-        return TutorProfile::with('user')->limit(10)->get();
+        return TutorProfile::with('user')->limit(4)->get();
     }
 }

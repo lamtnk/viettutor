@@ -53,7 +53,7 @@
 
         .avatar-preview-container {
             width: 100%;
-            height: 360px;
+            height: 450px;
             /* Chiều cao cố định của khung ảnh */
             overflow: hidden;
             display: flex;
@@ -108,25 +108,22 @@
         <div class="row mb-3">
             <div class="col-md-6">
                 <label class="form-label">Họ tên <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" name="name" value="{{ old('name', $user->name) }}" required
-                    readonly>
+                <input type="text" class="form-control" name="name" value="{{ old('name', $user->name) }}" required>
             </div>
 
             <div class="col-md-6">
                 <label class="form-label">Số điện thoại <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" name="phone" value="{{ old('phone', $user->phone) }}" required
-                    readonly>
+                <input type="text" class="form-control" name="phone" value="{{ old('phone', $user->phone) }}" required>
             </div>
 
             <div class="col-md-6 mt-3">
                 <label class="form-label">Email <span class="text-danger">*</span></label>
-                <input type="email" class="form-control" name="email" value="{{ old('email', $user->email) }}" required
-                    readonly>
+                <input type="email" class="form-control" name="email" value="{{ old('email', $user->email) }}" required>
             </div>
 
             <div class="col-md-3 mt-3">
                 <label class="form-label">Giới tính <span class="text-danger">*</span></label>
-                <select class="form-select" name="gender" required readonly>
+                <select class="form-select" name="gender" required>
                     <option value="Male" {{ $user->gender == 'Male' ? 'selected' : '' }}>Nam</option>
                     <option value="Female" {{ $user->gender == 'Female' ? 'selected' : '' }}>Nữ</option>
                 </select>
@@ -135,13 +132,13 @@
             <div class="col-md-3 mt-3">
                 <label class="form-label">Năm sinh <span class="text-danger">*</span></label>
                 <input type="number" class="form-control" name="birth_year"
-                    value="{{ old('birth_year', $user->birth_year) }}" required readonly>
+                    value="{{ old('birth_year', $user->birth_year) }}" required>
             </div>
 
             <div class="col-md-12 mt-3">
                 <label class="form-label">Địa chỉ <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" name="address" value="{{ old('address', $user->address) }}"
-                    required readonly>
+                    required>
             </div>
         </div>
 
@@ -156,7 +153,7 @@
                     <label class="form-label">Ảnh đại diện <span class="text-danger">*</span></label>
                     <div class="card" style="width: 18rem;">
                         <div class="card-img-top avatar-preview-container">
-                            <img id="avatarPreview" src="https://via.placeholder.com/150" alt="Ảnh đại diện"
+                            <img id="avatarPreview" src="https://via.placeholder.com/200" alt="Ảnh đại diện"
                                 class="avatar-preview">
                         </div>
                         <div class="card-body">
@@ -211,10 +208,17 @@
                             <textarea class="form-control" name="bio" rows="5"></textarea>
                         </div>
 
-                        <!-- identity card -->
+                        <!-- identity card 1 -->
                         <div class="col-md-12 mt-3">
-                            <label class="form-label">CCCD (2 mặt) <span class="text-danger">*</span></label>
-                            <input class="form-control" type="file" name="identiy-card[]" multiple
+                            <label class="form-label">CCCD (mặt trước) <span class="text-danger">*</span></label>
+                            <input class="form-control" type="file" name="identiy-card-1"
+                                accept=".jpg,.jpeg,.png,.pdf" required>
+                        </div>
+
+                        <!-- identity card 2 -->
+                        <div class="col-md-12 mt-3">
+                            <label class="form-label">CCCD (mặt sau) <span class="text-danger">*</span></label>
+                            <input class="form-control" type="file" name="identiy-card-2"
                                 accept=".jpg,.jpeg,.png,.pdf" required>
                         </div>
 
@@ -222,8 +226,8 @@
                         <div class="col-md-12 mt-3">
                             <label class="form-label">Bằng tốt nghiệp đại học hoặc bảng điểm thi THPTQG <span
                                     class="text-danger">*</span></label>
-                            <input class="form-control" type="file" name="certificates[]" multiple
-                                accept=".jpg,.jpeg,.png,.pdf" required>
+                            <input class="form-control" type="file" name="certificates" accept=".jpg,.jpeg,.png,.pdf"
+                                required>
                         </div>
                     </div>
                 </div>
