@@ -11,7 +11,6 @@ class ListTutorService
     public function getAll() {
         return TutorProfile::all();
     }
-
     public function getFullProfile() {
         $tutors = TutorProfile::whereHas('user', function($query) {
             $query->where('user_type', 'tutor');
