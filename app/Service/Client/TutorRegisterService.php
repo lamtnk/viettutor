@@ -11,7 +11,7 @@ class TutorRegisterService
 {
     public function getUser()
     {
-        return User::find(1); // Lấy người dùng mẫu
+        return User::find(1); // Lấy người dùng mẫu UserId = 1 để test do chưa có chức năng đăng nhập
     }
 
     public function getProvinces()
