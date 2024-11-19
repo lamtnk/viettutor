@@ -93,8 +93,7 @@
 .teacher-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     /* width: 100%; */
-    width: 300px; /* Chiều rộng cố định */
-    height: 450px; /* Chiều cao cố định */
+
     border: 1px solid #ddd; /* Viền bao quanh */
     border-radius: 10px; /* Bo góc */
     overflow: hidden; /* Ẩn nội dung tràn */
