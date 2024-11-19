@@ -32,7 +32,7 @@ class TutorRegisterController extends Controller
     public function store(Request $request)
     {
         // $userId = auth()->id(); // Lấy ID người dùng đăng nhập
-        $userId = 1;
+        $userId = 1; // Vì chưa có chức năng đăng nhập nên xài tạm userId = 1 để test
         $tutorProfile = $this->tutorRegisterService->register($request->all(), $userId);
 
         // return redirect()->route('tutor.register.success')->with('success', 'Đăng ký gia sư thành công!');

@@ -53,7 +53,7 @@
 
         .avatar-preview-container {
             width: 100%;
-            height: 450px;
+            height: 260px;
             /* Chiều cao cố định của khung ảnh */
             overflow: hidden;
             display: flex;
@@ -103,48 +103,38 @@
     <!-- Form Section -->
     <div class="container form-container mb-4">
         <h2 class="form-title text-center">ĐĂNG KÝ GIA SƯ</h2>
-        <!-- Personal Information Section -->
-        <h3 class="form-title">Thông tin cá nhân</h3>
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label class="form-label">Họ tên <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" name="name" value="{{ old('name', $user->name) }}" required>
-            </div>
-
-            <div class="col-md-6">
-                <label class="form-label">Số điện thoại <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" name="phone" value="{{ old('phone', $user->phone) }}" required>
-            </div>
-
-            <div class="col-md-6 mt-3">
-                <label class="form-label">Email <span class="text-danger">*</span></label>
-                <input type="email" class="form-control" name="email" value="{{ old('email', $user->email) }}" required>
-            </div>
-
-            <div class="col-md-3 mt-3">
-                <label class="form-label">Giới tính <span class="text-danger">*</span></label>
-                <select class="form-select" name="gender" required>
-                    <option value="Male" {{ $user->gender == 'Male' ? 'selected' : '' }}>Nam</option>
-                    <option value="Female" {{ $user->gender == 'Female' ? 'selected' : '' }}>Nữ</option>
-                </select>
-            </div>
-
-            <div class="col-md-3 mt-3">
-                <label class="form-label">Năm sinh <span class="text-danger">*</span></label>
-                <input type="number" class="form-control" name="birth_year"
-                    value="{{ old('birth_year', $user->birth_year) }}" required>
-            </div>
-
-            <div class="col-md-12 mt-3">
-                <label class="form-label">Địa chỉ <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" name="address" value="{{ old('address', $user->address) }}"
-                    required>
-            </div>
-        </div>
-
-        <!-- Tutor Information Section -->
         <form method="POST" action="{{ route('tutor.register.store') }}" enctype="multipart/form-data">
             @csrf
+            <!-- Personal Information Section -->
+            <h3 class="form-title">Thông tin cá nhân</h3>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Họ tên <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="name" value="{{ old('name', $user->name) }}"
+                        required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Số điện thoại <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="phone" value="{{ old('phone', $user->phone) }}"
+                        required>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                    <label class="form-label">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" name="email" value="{{ old('email', $user->email) }}"
+                        required>
+                </div>
+
+                <div class="col-md-6 mt-3">
+                    <label class="form-label">Địa chỉ <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="address" value="{{ old('address', $user->address) }}"
+                        required>
+                </div>
+            </div>
+
+            <!-- Tutor Information Section -->
+
             <h3 class="form-title">Thông tin gia sư</h3>
             <div class="row mb-3">
 
@@ -166,8 +156,23 @@
 
                 <div class="col-md-8">
                     <div class="row">
-                        <!-- type -->
+                        <!-- gender -->
                         <div class="col-md-6">
+                            <label class="form-label">Giới tính <span class="text-danger">*</span></label>
+                            <select class="form-select" name="gender" required>
+                                <option value="1">Nam</option>
+                                <option value="0">Nữ</option>
+                            </select>
+                        </div>
+
+                        <!-- birth year -->
+                        <div class="col-md-6">
+                            <label class="form-label">Năm sinh <span class="text-danger">*</span></label>
+                            <input type="number" class="form-control" name="birth_year" required placeholder="VD: 1995">
+                        </div>
+
+                        <!-- type -->
+                        <div class="col-md-6 mt-3">
                             <label class="form-label">Bạn đang là <span class="text-danger">*</span></label>
                             <select class="form-select" name="type" required>
                                 <option value="1">Giáo viên</option>
@@ -176,9 +181,10 @@
                         </div>
 
                         <!-- specialties -->
-                        <div class="col-md-6">
+                        <div class="col-md-6 mt-3">
                             <label class="form-label">Môn dạy <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" name="specialties" required>
+                            <input type="text" class="form-control" name="specialties" required
+                                placeholder="VD: toán, lý">
                         </div>
 
                         <!-- live area-->
@@ -201,38 +207,60 @@
                             </select>
                         </div>
 
-                        <!-- bio -->
-                        <div class="col-md-12 mt-3">
-                            <label class="form-label">Giới thiệu về bản thân <span class="text-danger">*</span> (1500
-                                từ)</label>
-                            <textarea class="form-control" name="bio" rows="5"></textarea>
+                        <!-- min hourly rate -->
+                        <div class="col-md-6 mt-3">
+                            <label class="form-label">Học phí/buổi mong muốn tối thiểu <span
+                                    class="text-danger">*</span></label>
+                            <input type="number" class="form-control" name="min_hourly_rate" required
+                                placeholder="VD: 200000">
                         </div>
 
-                        <!-- identity card 1 -->
-                        <div class="col-md-12 mt-3">
+                        <!-- max hourly rate -->
+                        <div class="col-md-6 mt-3">
+                            <label class="form-label">Học phí/buổi mong muốn tối đa <span
+                                    class="text-danger">*</span></label>
+                            <input type="number" class="form-control" name="max_hourly_rate" required
+                                placeholder="VD: 400000">
+                        </div>
+
+                        <!-- front of id card -->
+                        <div class="col-md-6 mt-3">
                             <label class="form-label">CCCD (mặt trước) <span class="text-danger">*</span></label>
-                            <input class="form-control" type="file" name="identiy-card-1"
-                                accept=".jpg,.jpeg,.png,.pdf" required>
+                            <input class="form-control" type="file" name="front_of_id" accept=".jpg,.jpeg,.png,.pdf"
+                                required>
                         </div>
 
-                        <!-- identity card 2 -->
-                        <div class="col-md-12 mt-3">
+                        <!-- back of id card -->
+                        <div class="col-md-6 mt-3">
                             <label class="form-label">CCCD (mặt sau) <span class="text-danger">*</span></label>
-                            <input class="form-control" type="file" name="identiy-card-2"
-                                accept=".jpg,.jpeg,.png,.pdf" required>
+                            <input class="form-control" type="file" name="back_of_id" accept=".jpg,.jpeg,.png,.pdf"
+                                required>
                         </div>
 
                         <!-- certificates -->
-                        <div class="col-md-12 mt-3">
+                        <div class="col-md-6 mt-3">
                             <label class="form-label">Bằng tốt nghiệp đại học hoặc bảng điểm thi THPTQG <span
                                     class="text-danger">*</span></label>
                             <input class="form-control" type="file" name="certificates" accept=".jpg,.jpeg,.png,.pdf"
                                 required>
                         </div>
+
+                        <!-- experience years -->
+                        <div class="col-md-6 mt-3">
+                            <label class="form-label">Số năm kinh nghiệm <span class="text-danger">*</span></label>
+                            <input type="number" class="form-control" name="experience_years" required
+                                placeholder="VD: 5">
+                        </div>
                     </div>
                 </div>
 
 
+                <!-- bio -->
+                <div class="col-md-12 mt-3">
+                    <label class="form-label">Giới thiệu về bản thân <span class="text-danger">*</span> (1500
+                        từ)</label>
+                    <textarea class="form-control" name="bio" rows="5"></textarea>
+                </div>
             </div>
 
             <!-- Submit Button -->

@@ -11,6 +11,7 @@ class TutorProfile extends Model
 
     protected $fillable = [
         'user_id',
+        'type',
         'bio',
         'experience_years',
         'specialties',
@@ -20,7 +21,10 @@ class TutorProfile extends Model
         'min_hourly_rate',
         'max_hourly_rate',
         'profile_image',
-        'type',
+        'front_of_id',
+        'back_of_id',
+        'sex',
+        'birth_year',
         'area',
         'status',
     ];
