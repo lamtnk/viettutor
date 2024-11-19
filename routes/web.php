@@ -36,6 +36,9 @@ Route::prefix('/')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home.index');
     Route::get('contact', [ContactController::class, 'index'])->name('contact.index');
     Route::get('tutor-register', [TutorRegisterController::class, 'showForm'])->name('tutorRegister.showForm');
+    Route::get('tutor-register/success', function () {
+        return view('client.register.TutorRegisterSuccess');
+    })->name('tutor.register.success');
     Route::get('tutor-register/{province_id}', [TutorRegisterController::class, 'getDistricts']);
     Route::post('tutor-register/register', [TutorRegisterController::class, 'store'])->name('tutor.register.store');
 });

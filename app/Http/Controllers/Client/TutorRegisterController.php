@@ -35,7 +35,6 @@ class TutorRegisterController extends Controller
         $userId = 1; // Vì chưa có chức năng đăng nhập nên xài tạm userId = 1 để test
         $tutorProfile = $this->tutorRegisterService->register($request->all(), $userId);
 
-        // return redirect()->route('tutor.register.success')->with('success', 'Đăng ký gia sư thành công!');
-        return redirect()->route('home.index');
+        return redirect()->route('tutor.register.success');
     }
 }

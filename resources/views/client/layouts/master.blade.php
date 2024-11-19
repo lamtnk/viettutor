@@ -90,7 +90,7 @@
                                 <a href="blog.html" class="dropdown-item">Blog</a>
                                 <a href="team.html" class="dropdown-item">Đội ngũ của chúng tôi</a>
                                 <a href="testimonial.html" class="dropdown-item">Cảm nhận khách hàng</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                                <a href="{{ route('tutorRegister.showForm') }}" class="dropdown-item">Đăng ký gia sư</a>
                             </div>
                         </div>
                         <a href="{{ route('contact.index') }}" class="nav-item nav-link">Liên hệ</a>
