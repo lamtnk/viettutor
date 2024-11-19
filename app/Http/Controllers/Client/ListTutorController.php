@@ -13,9 +13,9 @@ class ListTutorController extends Controller
     public function __construct(ListTutorService $listTutorService) {
         $this->listTutorService = $listTutorService;
     }
-
     public function index() {
-        $listTutor = $this->listTutorService->getFullProfile();
+        $listTutor = $this->listTutorService->getFullProfile();      
+        // dd($listTutor);
         return view('client.ListTutor.list-tutor', compact('listTutor'));
     }
 }
