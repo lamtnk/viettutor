@@ -25,16 +25,7 @@ class ListTutorController extends Controller
     }
     public function index() {
         $listTutor = $this->listTutorService->getFullProfile();
-        foreach ($listTutor as $key => $item) {
-            // Làm tròn số 
-            $listTutor[$key]['roundedValue'] = $this->customRound($listTutor[$key]['average_rating']);
-            // Tính sao đầy
-            $listTutor[$key]['filledStars'] = floor($listTutor[$key]['roundedValue']);
-            // Tính sao nửa
-            $listTutor[$key]['hasHalfStar'] = ($listTutor[$key]['roundedValue'] - $listTutor[$key]['filledStars']) == 0.5;
-            // Tính sao trống
-            $listTutor[$key]['emptyStars'] = 5 - $listTutor[$key]['filledStars'] - ($listTutor[$key]['hasHalfStar'] ? 1 : 0);
-        }
+        
         // dd($listTutor);
         return view('client.ListTutor.list-tutor', compact('listTutor'));
     }
