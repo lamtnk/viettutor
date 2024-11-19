@@ -2,6 +2,9 @@
 @section('main')
 <div class="container-fluid py-5">
     <div class="container py-5">
+        @if(session('success')) <div class="alert alert-success"> {{ session('success') }} </div> 
+                    @endif @if(session('error')) <div class="alert alert-danger"> {{ session('error') }} 
+                    </div> @endif
         <div class="p-5 bg-light rounded">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Liên hệ với chúng tôi</h4>
@@ -43,12 +46,41 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
-                    <form action="">
-                        <input type="text" class="w-100 form-control py-3 mb-5 border-primary" placeholder="Tên của bạn">
-                        <input type="email" class="w-100 form-control py-3 mb-5 border-primary" placeholder="Nhập Email của bạn">
-                        <textarea class="w-100 form-control mb-5 border-primary" rows="8" cols="10" placeholder="Tin nhắn của bạn"></textarea>
-                        <button class="w-100 btn btn-primary form-control py-3 border-primary text-white bg-primary" type="submit">Gửi</button>
+                    <form action="{{ route('contact.store') }}" method="POST">
+                        @csrf
+                        <div class="form-group mb-3">
+                            <label for="name">Tên của bạn</label>
+                            <input type="text" class="w-100 form-control py-3 mb-5 border-primary @error('name') is-invalid @enderror" id="name" name="name" placeholder="Tên của bạn" value="{{ old('name') }}">
+                            @error('name')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label for="email">Nhập Email của bạn</label>
+                            <input type="email" class="w-100 form-control py-3 mb-5 border-primary  @error('email') is-invalid @enderror" id="email" name="email" placeholder="Nhập Email của bạn" value="{{ old('email') }}">
+                            @error('email')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label for="message">Tin nhắn của bạn</label>
+                            <textarea class="w-100 form-control py-3 mb-5 border-primary @error('message') is-invalid @enderror" id="message" name="message" rows="5" placeholder="Tin nhắn của bạn">{{ old('message') }}</textarea>
+                            @error('message')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Gửi</button>
                     </form>
+                    
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="border border-primary h-100 rounded">
