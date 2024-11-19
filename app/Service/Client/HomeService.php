@@ -6,8 +6,8 @@ use App\Models\TutorProfile;
 
 class HomeService
 {
-    public function getAll()
+    public function get4Tutor()
     {
-        return TutorProfile::with('user')->get();
+        return TutorProfile::with('user')->limit(10)->get();
     }
 }

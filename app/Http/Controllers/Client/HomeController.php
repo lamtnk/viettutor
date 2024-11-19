@@ -16,7 +16,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $listTutor = $this->homeService->getAll();
+        $listTutor = $this->homeService->get4Tutor();
         return view('client.home.index', compact('listTutor'));
     }
 }

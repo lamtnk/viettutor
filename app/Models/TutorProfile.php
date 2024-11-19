@@ -19,7 +19,10 @@ class TutorProfile extends Model
         'total_hours_taught',
         'min_hourly_rate',
         'max_hourly_rate',
-        'profile_image'
+        'profile_image',
+        'type',
+        'area',
+        'status',
     ];
 
     public function user()

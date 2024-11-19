@@ -91,9 +91,10 @@
                     <div class="text-center border-primary border bg-white service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-gamepad fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">Học Tập & Vui chơi:</a>
-                                <p class="my-3">Phát triển tư duy và kỹ năng qua các hoạt động học tập thú vị.</p>
+                                <div class="p-4"><i class="fas fa-comments fa-6x text-primary"></i></div>
+                                <a href="#" class="h4">Kết Nối Trực Tiếp:</a>
+                                <p class="my-3">Phụ huynh dễ dàng kết nối trực tiếp với gia sư phù hợp, không qua trung
+                                    gian.</p>
                                 <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Xem
                                     thêm</a>
                             </div>
@@ -104,9 +105,9 @@
                     <div class="text-center border-primary border bg-white service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-sort-alpha-down fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">Chương Trình Từ A đến Z:</a>
-                                <p class="my-3">Cung cấp đa dạng môn học từ tiểu học đến đại học.</p>
+                                <div class="p-4"><i class="fas fa-star fa-6x text-primary"></i></div>
+                                <a href="#" class="h4">Uy Tín, Chất Lượng</a>
+                                <p class="my-3">Hệ thống đánh giá minh bạch, giúp bạn lựa chọn gia sư đáng tin cậy.</p>
                                 <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Xem
                                     thêm</a>
                             </div>
@@ -130,9 +131,9 @@
                     <div class="text-center border-primary border bg-white service-item">
                         <div class="service-content d-flex align-items-center justify-content-center p-4">
                             <div class="service-content-inner">
-                                <div class="p-4"><i class="fas fa-user-nurse fa-6x text-primary"></i></div>
-                                <a href="#" class="h4">Quan Tâm Tinh Thần:</a>
-                                <p class="my-3">Chăm sóc sức khỏe tinh thần và động viên trẻ học tập hiệu quả.</p>
+                                <div class="p-4"><i class="fas fa-user-circle fa-6x text-primary"></i></div>
+                                <a href="#" class="h4">Chăm Sóc Khách Hàng Tận Tâm</a>
+                                <p class="my-3">Đội ngũ hỗ trợ luôn sẵn sàng giải đáp mọi thắc mắc của bạn.</p>
                                 <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Xêm
                                     thêm</a>
                             </div>
@@ -490,7 +491,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
                         <div class="team-item border border-primary img-border-radius overflow-hidden">
                             <!-- Sử dụng profile_image nếu có, nếu không thì hiển thị ảnh mặc định -->
-                            <img src="{{ $tutor->profile_image ? asset($tutor->profile_image) : url('assets_client/img/team-1.jpg') }}"
+                            <img src="{{ file_exists(public_path($tutor->profile_image)) ? asset($tutor->profile_image) : url('assets_client/img/team-1.jpg') }}"
                                 class="img-fluid w-100" alt="{{ $tutor->user->name }}">
 
                             <div class="team-icon d-flex align-items-center justify-content-center">

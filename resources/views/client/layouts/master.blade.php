@@ -30,7 +30,8 @@
     <!-- Template Stylesheet -->
     <link href="{{ url('') }}/assets_client/css/style.css" rel="stylesheet">
 
-
+    <!-- Thêm CSS từ section 'styles' nếu có -->
+    @yield('styles')
 
 </head>
 
@@ -69,7 +70,7 @@
         </div>
         <div class="container px-0">
             <nav class="navbar navbar-light navbar-expand-xl py-3">
-                <a href="index.html" class="navbar-brand">
+                <a href="{{ route('home.index') }}" class="navbar-brand">
                     <h1 class="text-primary display-6">Viet<span class="text-secondary">Tutor</span></h1>
                 </a>
                 <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
@@ -92,7 +93,7 @@
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                        <a href="{{ route('contact.index') }}" class="nav-item nav-link">Liên hệ</a>
                     </div>
                     <div class="d-flex me-4">
                         <div id="phone-tada" class="d-flex align-items-center justify-content-center">
@@ -164,13 +165,13 @@
                     <div class="footer-item">
                         <div class="d-flex flex-column p-4 ps-5 text-dark border border-primary"
                             style="border-radius: 50% 20% / 10% 40%;">
-                            <p>Thứ 2: 8am to 5pm</p>
-                            <p>Thứ 3: 8am to 5pm</p>
-                            <p>Thú 4: 8am to 5pm</p>
-                            <p>Thứ 5: 8am to 5pm</p>
-                            <p>Thứ 6: 8am to 5pm</p>
-                            <p>Thứ 7: 8am to 5pm</p>
-                            <p class="mb-0">Chủ nhật: đóng cửa</p>
+                            <p>Thứ 2: 8:00 - 17:00</p>
+                            <p>Thứ 3: 8:00 - 17:00</p>
+                            <p>Thú 4: 8:00 - 17:00</p>
+                            <p>Thứ 5: 8:00 - 17:00</p>
+                            <p>Thứ 6: 8:00 - 17:00</p>
+                            <p>Thứ 7: 8:00 - 17:00</p>
+                            <p class="mb-0">Chủ nhật: Nghỉ</p>
                         </div>
                     </div>
                 </div>
@@ -291,6 +292,9 @@
 
     <!-- Template Javascript -->
     <script src="{{ url('') }}/assets_client/js/main.js"></script>
+
+    <!-- Thêm script JS từ section 'scripts' nếu có -->
+    @yield('scripts')
 </body>
 
 </html>
