@@ -1,12 +1,13 @@
 <?php
 namespace App\Service\Client;
-use Illuminate\Http\Request;
+
+use App\Http\Requests\RegisterRequest;
 use App\Models\User;
 class RegisterService {
     public function index(){
-        return view('client.login');
+        return view('client.register');
     }
-public function register(Request $request){
+public function register(RegisterRequest $request){
     $user = new User();
     $user->name = $request->name;
     $user->email = $request->email;
