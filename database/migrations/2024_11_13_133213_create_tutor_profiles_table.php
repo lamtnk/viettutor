@@ -23,7 +23,8 @@ class CreateTutorProfilesTable extends Migration
             $table->string('profile_image')->nullable();
             $table->string('front_of_id')->nullable();
             $table->string('back_of_id')->nullable();
-            $table->int('sex')->nullable();
+            $table->integer('sex')->nullable();
+            $table->integer('birth_year')->nullable();
             $table->integer('area')->nullable();
             $table->integer('status')->nullable();
             $table->timestamps();
