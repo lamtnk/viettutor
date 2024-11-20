@@ -24,6 +24,8 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('admin')->group(function () {
     Route::prefix('tutor')->group(function () {
         Route::get('/', [TutorController::class, 'index'])->name('tutor.index');
+        Route::get('profile/{tutorId}', [TutorController::class, 'getProfile'])->name('tutor.profile');
+        Route::post('profile/{tutorId}', [TutorController::class, 'changeStatus'])->name('tutor.changeStatus');
     });
     Route::prefix('feedback')->group(function () {
         Route::get('/', [FeedbackController::class, 'index'])->name('feedback.index');
