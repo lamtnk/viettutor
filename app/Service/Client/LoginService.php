@@ -20,10 +20,6 @@ class LoginService {
         if (!$account) {
             return redirect('/login')->with('error', 'Không tìm thấy tài khoản');
         }
-        if( User::check($email,$account->email) ) {
-            return redirect('/login')->with('error', 'Tài khoản đã tồn tại');
-        }
-        
         if (!Hash::check($password, $account->password)) {
             return redirect('/login')->with('error', 'Thông tin đăng nhập không chính xác');
         }
