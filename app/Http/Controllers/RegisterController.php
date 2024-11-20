@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RegisterRequest;
 use App\Service\Client\RegisterService;
-use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -14,7 +14,7 @@ class RegisterController extends Controller
     public function index() {
        return $this->registerService->index();
     }
-    public function register(Request $request) {
+    public function register(RegisterRequest $request) {
         return $this->registerService->register($request);
     }
 } 
