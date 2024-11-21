@@ -44,11 +44,9 @@ Route::prefix('/')->group(function () {
     Route::get('tutor-register/{province_id}', [TutorRegisterController::class, 'getDistricts']);
     Route::post('tutor-register/register', [TutorRegisterController::class, 'store'])->name('tutor.register.store');
 });
-Route::get('/tblTutor', function () {
-    return view('client.ListTutor.tutor-details');
-});
 Route::prefix('list-tutor')->group(function () {
     Route::get('/', [ListTutorController::class, 'index'])->name('list-tutor.index');
+    Route::get('/{id}', [ListTutorController::class, 'findTutorById'])->name('list-tutor.show');
 });
 Route::prefix('contact')->group(function () {
     Route::get('/', [ContactController::class, 'index'])->name('contact.index');

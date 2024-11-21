@@ -15,65 +15,95 @@
               class="profile-img"
             />
             <p class="mt-2"><strong class="ready-txt">Đang sẵn sàng</strong></p>
-            <p>Ngày tham gia: zczxzxc</p>
+            <p><strong>Ngày tham gia:</strong> {{$tutor->first()->created_at->format('d/m/Y')}}</p>
           </div>
 
           <div>
             <h6 class="achievement-title">Thành Tích</h6>
             <hr />
-            <div class="achievement-item">
-              <div class="d-flex">
-                <span class="achievement-icon">🎖️</span>
-                <div class="achievement-content">
-                  Thuê thì thuê hông thuê thì rent =)))
-                </div>
-              </div>
-              <div class="achievement-date">09/07/2020</div>
-            </div>
+            @foreach ($certificates as $certificate)
+                <div class="achievement-item">
+                    <div class="d-flex">
+                        <span class="achievement-icon">🎖️</span>
+                        <div class="achievement-content" data-bs-toggle="modal" data-bs-target="#exampleModal-{{$certificate->id}}">
+                            {{$certificate->title}}
+                        </div>
 
-            <div class="achievement-item">
-              <div class="d-flex">
-                <span class="achievement-icon">🎖️</span>
-                <div class="achievement-content">Không đấm khách!</div>
-              </div>
-              <div class="achievement-date">30/11/2022</div>
-            </div>
-            <div class="achievement-item">
-              <div class="d-flex">
-                <span class="achievement-icon">🎖️</span>
-                <div class="achievement-content">
-                  Cựu nhi đồng 2x tuổi, kẻ hủy diệt scam, kẻ thù của lướt mắt
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal-{{$certificate->id}}" tabindex="-1" aria-labelledby="exampleModalLabel-{{$certificate->id}}" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel-{{$certificate->id}}">{{$certificate->title}}</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                      <img
+                                        src="https://i.pinimg.com/736x/d5/bc/2f/d5bc2f4a1a5334706760c89ee8b9f0ec.jpg"
+                                        alt="Profile Picture"
+                                        class="profile-img mb-3"
+                                      />   
+                                    </div>
+                                    <div class="modal-body">
+                                      <p><strong>Giới thiệu: </strong>{{$certificate->description}}</p>
+                                      <p><strong>Ngày phát hành: </strong> {{$certificate->issued_date}}</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievement-date">{{$certificate->issued_date}}</div>
                 </div>
-              </div>
-              <div class="achievement-date">26/01/2024</div>
-            </div>
+            @endforeach
+
+            <!-- Modal -->
+            
           </div>
         </div>
-        <div class="col-md-3 col-md-push-6">
-          <div class="border rounded p-3 mt-2">
-            <div class="price">80,000 ₫/h</div>
+
+        <div class="col-md-3 col-md-push-6 ">
+          <div class="border rounded p-2 mt-2 text-center">
+          <div class="price mt-2">
+              {{ number_format($tutor->first()->min_hourly_rate ?? 0, 0) }} ~
+              {{ number_format($tutor->first()->max_hourly_rate ?? 0, 0) }} đ/H
+          </div>
             <div class="rating my-2">
-              ★★★★☆ <span class="text-muted">89 Đánh giá</span>
+              {{-- Hiển thị sao đầy --}}
+              @for ($i = 0; $i < $tutor->first()->filledStars; $i++)
+                  <span class="bi bi-star-fill star-checked"></span>
+              @endfor
+
+              {{-- Hiển thị sao nửa --}}
+              @if ($tutor->first()->hasHalfStar)
+                  <span class="bi bi-star-half star-checked"></span>
+              @endif
+
+              {{-- Hiển thị sao trống --}}
+              @for ($i = 0; $i < $tutor->first()->emptyStars; $i++)
+                  <span class="bi bi-star"></span>
+              @endfor
+              <span class="text-muted">({{$tutor->first()->average_rating}})</span>
             </div>
             <button class="btn btn-custom w-100 mb-2">THUÊ</button>
-            <button class="btn btn-outline-primary w-100 mb-2">DONATE</button>
-            <button class="btn btn-outline-secondary w-100">CHAT</button>
+            <button class="btn btn-outline-primary w-100 mb-3">DONATE</button>
           </div>
         </div>
 
         <div class="col-md-6 col-md-pull-3">
           <div class="row mb-4">
-            <h3 class="col-md-9">Yan 🌸</h3>
+            <h3 class="col-md-9 custom-name">{{$tutor->first()->user->name??'N/A'}}</h3>
             <button class="btn btn-danger col-md-3">Theo dõi</button>
           </div>
 
           <div class="row">
-            <p class="col-md-3">
+            <p class="col-md-6">
               <strong>Số người theo dõi:</strong> 1147 người
             </p>
-            <p class="col-md-3"><strong>Số giờ dạy:</strong> 11450 giờ</p>
-            <p class="col-md-3"><strong>Tỷ lệ hoàn thành:</strong> 96.41%</p>
-            <p class="col-md-3"><strong>Tình trạng thiết bị:</strong> 🎤</p>
+            <p class="col-md-3"><strong>Số giờ dạy:</strong> {{$tutor->first()->total_hours_taught??'N/A'}}</p>
+
           </div>
           <hr />
           <div class="mb-4 mt-4 d-flex flex-wrap overflow-container">
@@ -91,17 +121,7 @@
           <hr />
           <h4><strong>Thông tin</strong></h4>
           <div class="d-flex gap-3 flex-wrap">
-            GIỌNG BẮC. MỎ HƠI HỖN. CHƠI GAME VUI VẺ KO TRYHARD !!! SAU 23H MÌNH
-            NHẬN 100K/H VÌ MÌNH LƯỜI CHƠI ĐÊM HIHI Mình nhận chơi : - Lol: đơn
-            đôi, flex chơi hơi dốt nhưng mà hứa ko tạ =)) - TFT: du học sinh PBE
-            2 tuần, đã tốt nghiệp - TFT cặp đôi: gánh khách hoặc khách gánh -
-            Aram: thách đấu aram ko lói nhìu :))))))) - PUBG PC: bắn gà nên chỉ
-            nhận normal vui vẻ tkuii - Party Animal: Báo đời. chuyên đấm nhầm
-            đồng đội =)) - Nhận chửi thuê theo style KhÁ bẢnH 👍 MÌNH KHÔNG BIẾT
-            HÁT!!! ❌ KHÔNG RENT NỢ ❌ KHÔNG CHƠI TRƯỚC TRẢ SAU ❌ KHÔNG TIẾP
-            NGƯỜI XÀM L Nếu hong thấy mình rep thì ib qua fb cho mình nhé ạ T.T
-            https://www.facebook.com/huniedangiuu Đã ghé qua đây rùi thì cho
-            mình xin 1 fl nhé hehe. iuuuuuuuuuuu ♥♥♥
+          {{$tutor->first()->bio??'N/A'}}
           </div>
           <hr />
           <h4 class="mb-4 mt-2">Đánh giá</h4>

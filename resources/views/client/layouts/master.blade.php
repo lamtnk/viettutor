@@ -92,7 +92,7 @@
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Khác</a>
                             <div class="dropdown-menu m-0 bg-secondary rounded-0">
                                 <a href="blog.html" class="dropdown-item">Blog</a>
-                                <a href="team.html" class="dropdown-item">Đội ngũ của chúng tôi</a>
+                                <a href="{{ route('list-tutor.index') }}" class="dropdown-item">Đội ngũ của chúng tôi</a>
                                 <a href="testimonial.html" class="dropdown-item">Cảm nhận khách hàng</a>
                                 <a href="{{ route('tutorRegister.showForm') }}" class="dropdown-item">Đăng ký gia sư</a>
                             </div>

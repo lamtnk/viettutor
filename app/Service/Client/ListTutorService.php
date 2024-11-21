@@ -2,6 +2,7 @@
 
 namespace App\Service\Client;
 
+use App\Models\Certificate;
 use App\Models\TutorProfile;
 use App\Models\User;
 
@@ -27,6 +28,31 @@ class ListTutorService
         }
         return $tutors;
     }
+    public function getTutorByTutorId($id) {
+        // Lấy thông tin tutor dựa trên ID
+        $tutors = TutorProfile::whereHas('user', function($query) use ($id) {
+            $query->where('id', $id);
+        })->get();
+
+        // Thêm các thuộc tính tính sao cho mỗi tutor
+        $tutors->transform(function ($tutor) {
+            $roundedValue = $this->customRound($tutor->average_rating ?? 0);
+            $tutor->roundedValue = $roundedValue;
+            $tutor->filledStars = floor($roundedValue); 
+            $tutor->hasHalfStar = ($roundedValue - $tutor->filledStars) == 0.5; 
+            $tutor->emptyStars = 5 - $tutor->filledStars - ($tutor->hasHalfStar ? 1 : 0); 
+
+            return $tutor;
+        });
+
+        return $tutors;
+    }
+
+    public function getCertificatesTutor($id) {
+        $certificates = Certificate::where('tutor_profile_id', $id)->get(); 
+        return $certificates;
+    }
+    
     private function customRound($number) {
         $decimal = $number - intval($number);
         if ($decimal >= 0.8) {

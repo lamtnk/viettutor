@@ -1,3 +1,8 @@
+.custom-name {
+    color: #000;
+    font-size: 30px;
+    font-weight: 1000;
+}
 /* Phần thành tích */
 .achievement-title {
     color: red;
@@ -22,6 +27,10 @@
 }
 .achievement-content {
     flex: 1;
+}
+.achievement-content:hover {
+    font-weight: bolder;
+    color: #000;
 }
 .achievement-date {
     font-size: 12px;
@@ -118,7 +127,7 @@
     z-index: -1; /* Đặt overlay nằm bên dưới text */
 }
 .price {
-    font-size: 1.5rem;
+    font-size: 23px;
     font-weight: bold;
     color: #f15b5b;
 }
@@ -141,7 +150,7 @@
 }
 /* Phần sideBar */
 .star-checked {
-    color: yellow;
+    color: #ff9948;
 }
 
 /* top gs */
