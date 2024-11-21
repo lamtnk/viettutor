@@ -30,9 +30,9 @@ Route::prefix('/')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home.index');
     Route::get('contact', [ContactController::class, 'index'])->name('contact.index');
 });
-// Route::get('/tblTutor', function () {
-//     return view('client.tblTutor.tutor');
-// });
+Route::get('/tblTutor', function () {
+    return view('client.ListTutor.tutor-details');
+});
 Route::prefix('list-tutor')->group(function () {
     Route::get('/', [ListTutorController::class, 'index'])->name('list-tutor.index');
 });

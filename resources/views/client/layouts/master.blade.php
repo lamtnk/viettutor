@@ -29,12 +29,13 @@
     <link href="{{url('')}}/assets_client/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Css về thẻ Gia sư -->
-    <link rel="stylesheet" href="{{ url('') }}/assets/css/pages/layoutTutorInfo.css">
+    
+
     <!-- Template Stylesheet -->
     <link href="{{url('')}}/assets_client/css/style.css" rel="stylesheet">
 
 
-
+    @yield('layoutTutorInfo')
 </head>
 
 <body>
