@@ -92,7 +92,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-md-pull-3">
+        <div class="col-md-6 col-md-pull-3 mb-3">
           <div class="row mb-4">
             <h3 class="col-md-9 custom-name">{{$tutor->first()->user->name??'N/A'}}</h3>
             <button class="btn btn-danger col-md-3">Theo dõi</button>
@@ -125,6 +125,7 @@
           </div>
           <hr />
           <h4 class="mb-4 mt-2">Đánh giá</h4>
+          @foreach ($reviewers as $reviewer)
           <div class="review-item d-flex">
             <img
               src="https://via.placeholder.com/50"
@@ -134,59 +135,32 @@
             <div class="flex-grow-1">
               <div class="d-flex justify-content-between">
                 <div>
-                  <span class="review-header">Nguyễn Ngọc Minh</span>
-                  <span class="review-date d-block">22:54:24 8/11/2024</span>
+                  <span class="review-header">{{$reviewer->student->name}}</span>
+                  <span class="review-date d-block">{{$reviewer->created_at}}</span>
                 </div>
                 <div>
-                  <span class="review-stars">★★★★★</span>
-                  <span class="review-duration d-block">(Thuê 3h)</span>
-                </div>
-              </div>
-              <p class="mb-0">10 điểm không chê</p>
-            </div>
-          </div>
+                  <span class="review-stars">
+                  @for ($i = 0; $i < $reviewer->filledStars; $i++)
+                      <span class="bi bi-star-fill star-checked"></span>
+                  @endfor
 
-          <div class="review-item d-flex">
-            <img
-              src="https://via.placeholder.com/50"
-              alt="Avatar"
-              class="review-avatar"
-            />
-            <div class="flex-grow-1">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <span class="review-header">Lam Trúc</span>
-                  <span class="review-date d-block">11:22:39 27/8/2024</span>
-                </div>
-                <div>
-                  <span class="review-stars">★★★★★</span>
-                  <span class="review-duration d-block">(Thuê 1h)</span>
-                </div>
-              </div>
-              <p class="mb-0">Mê bạn này quá trời</p>
-            </div>
-          </div>
+                  {{-- Hiển thị sao nửa --}}
+                  @if ($reviewer->hasHalfStar)
+                      <span class="bi bi-star-half star-checked"></span>
+                  @endif
 
-          <div class="review-item d-flex">
-            <img
-              src="https://via.placeholder.com/50"
-              alt="Avatar"
-              class="review-avatar"
-            />
-            <div class="flex-grow-1">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <span class="review-header">K49</span>
-                  <span class="review-date d-block">06:58:51 16/8/2024</span>
-                </div>
-                <div>
-                  <span class="review-stars">★★★★★</span>
-                  <span class="review-duration d-block">(Thuê 1h)</span>
+                  {{-- Hiển thị sao trống --}}
+                  @for ($i = 0; $i < $reviewer->emptyStars; $i++)
+                      <span class="bi bi-star"></span>
+                  @endfor
+                  </span>
+                  <span class="review-duration d-block">({{$reviewer->rating}})</span>
                 </div>
               </div>
-              <p class="mb-0">Ngoan xinh yêu 10d</p>
+              <p class="mb-0">{{$reviewer->comment}}</p>
             </div>
           </div>
+          @endforeach
         </div>
       </div>
     </div>

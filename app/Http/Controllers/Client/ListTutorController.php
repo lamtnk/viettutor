@@ -22,6 +22,7 @@ class ListTutorController extends Controller
     public function findTutorById(int $id) {
         $tutor=$this->listTutorService->getTutorByTutorId($id);
         $certificates=$this->listTutorService->getCertificatesTutor($tutor->first()->id);
-        return view('client.ListTutor.tutor-details', compact(['tutor','certificates']));
+        $reviewers=$this->listTutorService->getReviewsByTutorId($tutor->first()->id);
+        return view('client.ListTutor.tutor-details', compact(['tutor','certificates','reviewers']));
     }
 }
