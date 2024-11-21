@@ -9,11 +9,14 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     protected $homeService;
-    public function __construct(HomeService $homeService) {
+    public function __construct(HomeService $homeService)
+    {
         $this->homeService = $homeService;
     }
 
-    public function index() {
-        return view('client.home.index');
+    public function index()
+    {
+        $listTutor = $this->homeService->get4Tutor();
+        return view('client.home.index', compact('listTutor'));
     }
 }
