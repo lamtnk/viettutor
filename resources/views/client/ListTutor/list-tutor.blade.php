@@ -1,4 +1,8 @@
 @extends('client.layouts.master')
+@section('layoutTutorInfo')
+<link rel="stylesheet" href="{{ url('') }}/assets/css/pages/layoutTutorInfo.css">
+
+@endsection
 @section('main')
 <div    id="main"
       class="mx-auto text-center wow fadeIn mt-2"
@@ -42,23 +46,11 @@
                           {{$item->bio}}
                         </p>
                         <div class="buttonCtrl">
-                          <button
-                            class="btn btn-success btn-check btn-sm me-2"
-                            ng-click="selectTeacher(55452,1)"
-                          >
-                            Chọn
-                          </button>
-                          <button
-                            class="btn btn-danger btn-uncheck btn-sm me-2"
-                            ng-click="selectTeacher(55452,0)"
-                          >
-                            Bỏ chọn
-                          </button>
+
                           <a
                             class="btn btn-outline-light btn-create-class btn-sm"
-                            ng-href="/tim-gia-su"
-                            href="/tim-gia-su"
-                            >Tạo yêu cầu</a
+                            href="/list-tutor/{{$item->user_id}}"
+                            >Xem hồ sơ</a
                           >
                         </div>
                       </div>
