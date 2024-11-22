@@ -15,8 +15,11 @@
 
     <link rel="stylesheet" href="{{ url('') }}/assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="{{ url('') }}/assets/vendors/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="{{ url('') }}/assets/css/app.css"> 
+    <link rel="stylesheet" href="{{ url('') }}/assets/css/app.css">
     <link rel="shortcut icon" href="{{ url('') }}/assets/images/favicon.svg" type="image/x-icon">
+
+    <!-- Thêm CSS từ section 'styles' nếu có -->
+    @yield('styles')
 </head>
 
 <body>
@@ -53,7 +56,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item ">
-                            <a href="{{route('feedback.index')}}" class='sidebar-link'>
+                            <a href="{{ route('feedback.index') }}" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                                 <span>FeedBack</span>
                             </a>
@@ -105,6 +108,9 @@
     </script>
 
     <script src="{{ url('') }}/assets/js/main.js"></script>
+
+    <!-- Thêm script JS từ section 'scripts' nếu có -->
+    @yield('scripts')
 </body>
 
 </html>
