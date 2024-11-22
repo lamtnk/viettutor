@@ -28,7 +28,7 @@
     <link href="{{ url('') }}/assets_client/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Css về thẻ Gia sư -->
-    
+
 
     <!-- Template Stylesheet -->
     <link href="{{ url('') }}/assets_client/css/style.css" rel="stylesheet">
@@ -87,13 +87,14 @@
                         <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
                         <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
                         <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
-                        <a href="program.html" class="nav-item nav-link">Chương trình</a>
+                        <a href="{{ route('course.index') }}" class="nav-item nav-link">Chương trình</a>
                         <a href="event.html" class="nav-item nav-link">Sự kiện</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Khác</a>
                             <div class="dropdown-menu m-0 bg-secondary rounded-0">
                                 <a href="blog.html" class="dropdown-item">Blog</a>
-                                <a href="{{ route('list-tutor.index') }}" class="dropdown-item">Đội ngũ của chúng tôi</a>
+                                <a href="{{ route('list-tutor.index') }}" class="dropdown-item">Đội ngũ của chúng
+                                    tôi</a>
                                 <a href="testimonial.html" class="dropdown-item">Cảm nhận khách hàng</a>
                                 <a href="{{ route('tutorRegister.showForm') }}" class="dropdown-item">Đăng ký gia sư</a>
                             </div>

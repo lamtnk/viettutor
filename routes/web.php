@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\TutorController;
 use App\Http\Controllers\Admin\FeedbackController;
 use App\Http\Controllers\Client\ContactController;
+use App\Http\Controllers\client\CourseController;
 use App\Http\Controllers\Client\FindTutorController;
 use App\Http\Controllers\Client\HomeController;
 use App\Http\Controllers\Client\ListTutorController;
@@ -58,4 +59,8 @@ Route::prefix('find-tutor')->group(function () {
     Route::get('/index', [FindTutorController::class, 'index'])->name('find-tutor.index');
     Route::post('/store', [FindTutorController::class, 'store'])->name('find-tutor.store');
     // Route::get('/add', [GameController::class, 'showAddGame'])->name('admin.game.show_add');
+});
+
+Route::prefix('course')->group(function () {
+    Route::get('/', [CourseController::class, 'index'])->name('course.index');
 });
