@@ -21,17 +21,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{url('')}}/assets_client/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="{{url('')}}/assets_client/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="{{url('')}}/assets_client/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets_client/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets_client/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets_client/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{url('')}}/assets_client/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets_client/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Css về thẻ Gia sư -->
     <link rel="stylesheet" href="{{ url('') }}/assets/css/pages/layoutTutorInfo.css">
     <!-- Template Stylesheet -->
-    <link href="{{url('')}}/assets_client/css/style.css" rel="stylesheet">
+    <link href="{{ url('') }}/assets_client/css/style.css" rel="stylesheet">
 
 
 
@@ -213,32 +213,38 @@
                         <div class="row g-3">
                             <div class="col-4">
                                 <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="{{url('')}}/assets_client/img/galary-1.jpg" class="img-fluid rounded-circle p-2" alt="">
+                                    <img src="{{ url('') }}/assets_client/img/galary-1.jpg"
+                                        class="img-fluid rounded-circle p-2" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="{{url('')}}/assets_client/img/galary-2.jpg" class="img-fluid rounded-circle p-2" alt="">
+                                    <img src="{{ url('') }}/assets_client/img/galary-2.jpg"
+                                        class="img-fluid rounded-circle p-2" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="{{url('')}}/assets_client/img/galary-3.jpg" class="img-fluid rounded-circle p-2" alt="">
+                                    <img src="{{ url('') }}/assets_client/img/galary-3.jpg"
+                                        class="img-fluid rounded-circle p-2" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="{{url('')}}/assets_client/img/galary-4.jpg" class="img-fluid rounded-circle p-2" alt="">
+                                    <img src="{{ url('') }}/assets_client/img/galary-4.jpg"
+                                        class="img-fluid rounded-circle p-2" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="{{url('')}}/assets_client/img/galary-5.jpg" class="img-fluid rounded-circle p-2" alt="">
+                                    <img src="{{ url('') }}/assets_client/img/galary-5.jpg"
+                                        class="img-fluid rounded-circle p-2" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="{{url('')}}/assets_client/img/galary-6.jpg" class="img-fluid rounded-circle p-2" alt="">
+                                    <img src="{{ url('') }}/assets_client/img/galary-6.jpg"
+                                        class="img-fluid rounded-circle p-2" alt="">
                                 </div>
                             </div>
                         </div>
@@ -279,14 +285,15 @@
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{url('')}}/assets_client/lib/wow/wow.min.js"></script>
-    <script src="{{url('')}}/assets_client/lib/easing/easing.min.js"></script>
-    <script src="{{url('')}}/assets_client/lib/waypoints/waypoints.min.js"></script>
-    <script src="{{url('')}}/assets_client/lib/lightbox/js/lightbox.min.js"></script>
-    <script src="{{url('')}}/assets_client/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="{{ url('') }}/assets_client/lib/wow/wow.min.js"></script>
+    <script src="{{ url('') }}/assets_client/lib/easing/easing.min.js"></script>
+    <script src="{{ url('') }}/assets_client/lib/waypoints/waypoints.min.js"></script>
+    <script src="{{ url('') }}/assets_client/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="{{ url('') }}/assets_client/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="{{url('')}}/assets_client/js/main.js"></script>
+    <script src="{{ url('') }}/assets_client/js/main.js"></script>
+    @yield('scripts')
 </body>
 
 </html>
