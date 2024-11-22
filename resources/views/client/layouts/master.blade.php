@@ -33,6 +33,7 @@
     <!-- Template Stylesheet -->
     <link href="{{ url('') }}/assets_client/css/style.css" rel="stylesheet">
 
+
     @yield('layoutTutorInfo')
     <!-- Thêm CSS từ section 'styles' nếu có -->
     @yield('styles')
@@ -296,7 +297,6 @@
 
     <!-- Template Javascript -->
     <script src="{{ url('') }}/assets_client/js/main.js"></script>
-
     <!-- Thêm script JS từ section 'scripts' nếu có -->
     @yield('scripts')
 </body>
