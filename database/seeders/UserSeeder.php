@@ -18,6 +18,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('password'),
             'phone' => '0123456789',
             'address' => '123 Main St',
+            'email_verified_at'=> '2024-11-14 01:20:12'
         ]);
 
         // Tạo phụ huynh 2
@@ -28,6 +29,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('password'),
             'phone' => '0123456790',
             'address' => '789 Main St',
+            'email_verified_at'=> '2024-11-14 01:20:12'
         ]);
 
         // Tạo gia sư 1
@@ -38,6 +40,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('password'),
             'phone' => '0987654321',
             'address' => '456 Main St',
+            'email_verified_at'=> '2024-11-14 01:20:12'
         ]);
 
         // Tạo gia sư 2
@@ -48,6 +51,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('password'),
             'phone' => '0987653321',
             'address' => '456 Main St',
+            'email_verified_at'=> '2024-11-14 01:20:12'
         ]);
 
         // Tạo gia sư 3
@@ -58,6 +62,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('password'),
             'phone' => '0987651122',
             'address' => '1011 Main St',
+            'email_verified_at'=> '2024-11-14 01:20:12'
         ]);
 
         // Tạo gia sư 4
@@ -68,6 +73,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('password'),
             'phone' => '0987654433',
             'address' => '1111 Main St',
+            'email_verified_at'=> '2024-11-14 01:20:12'
         ]);
 
         // Tạo phụ huynh 3
@@ -78,6 +84,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('password'),
             'phone' => '0123456901',
             'address' => '2222 Main St',
+            'email_verified_at'=> '2024-11-14 01:20:12'
         ]);
 
         // Tạo gia sư 5
@@ -88,6 +95,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('password'),
             'phone' => '0987655555',
             'address' => '3333 Main St',
+            'email_verified_at'=> '2024-11-14 01:20:12'
         ]);
 
         // Tạo gia sư 6
@@ -98,6 +106,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('password'),
             'phone' => '0987656666',
             'address' => '4444 Main St',
+            'email_verified_at'=> '2024-11-14 01:20:12'
         ]);
     }
 }
