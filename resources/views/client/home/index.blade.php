@@ -84,7 +84,7 @@
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
                     Chúng Tôi Làm Gì</h4>
-                <h1 class="mb-5 display-3">Bắt Đầu Hành Trình Học Tập Cùng VietTutor</h1>
+                <h1 class="mb-5 display-3">Bắt Đầu Hành Trình Học Tập Cùng Gia Sư Việt</h1>
             </div>
             <div class="row g-5">
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
@@ -292,7 +292,8 @@
                         <div class="events-text p-4 border border-primary bg-white border-top-0 rounded-bottom">
                             <a href="#" class="h4">Hội thảo vẽ tranh & âm nhạc</a>
                             <p class="mb-0 mt-3">Tham gia hội thảo vẽ tranh & âm nhạc để khám phá sự sáng tạo qua sắc màu
-                                và giai điệu. Một trải nghiệm nghệ thuật độc đáo dành cho mọi lứa tuổi!</p>
+                                và giai điệu. Một trải nghiệm nghệ thuật độc đáo dành cho mọi lứa tuổi! Chìa khoá cho ta 
+                                cảm nhận cửa sổ tâm hồn .</p>
                         </div>
                     </div>
                 </div>
@@ -316,9 +317,10 @@
                             </div>
                         </div>
                         <div class="events-text p-4 border border-primary bg-white border-top-0 rounded-bottom">
-                            <a href="#" class="h4">Tại sao học là cần thiết?</a>
+                            <a href="#" class="h4">Tại sao việc  học là cần thiết?</a>
                             <p class="mb-0 mt-3">Học tập là chìa khóa mở ra tri thức và cơ hội. Nó giúp bạn phát triển bản
-                                thân, đạt được mục tiêu và xây dựng một tương lai tươi sáng.</p>
+                                thân, đạt được mục tiêu và xây dựng một tương lai tươi sáng.Góp phần cải thiện bản thân trong hành trình
+                                phá phá kiến thức.</p>
                         </div>
                     </div>
                 </div>
@@ -384,7 +386,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="text-primary">Mary Mordern</h6>
-                                <p class="text-muted">VietTutor</p>
+                                <p class="text-muted">Gia Sư Việt</p>
                             </div>
                         </div>
                         <div class="px-4 pb-4 bg-light rounded-bottom">
@@ -420,7 +422,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="text-primary">Mary Mordern</h6>
-                                <p class="text-muted">VietTutor</p>
+                                <p class="text-muted">Gia Sư Việt</p>
                             </div>
                         </div>
                         <div class="px-4 pb-4 bg-light rounded-bottom">
@@ -456,7 +458,7 @@
                             </div>
                             <div class="ms-3">
                                 <h6 class="text-primary">Mary Mordern</h6>
-                                <p class="text-muted">VietTutor</p>
+                                <p class="text-muted">Gia Sư Việt</p>
                             </div>
                         </div>
                         <div class="px-4 pb-4 bg-light rounded-bottom">
@@ -524,7 +526,7 @@
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
                 <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">
                     Đánh giá từ phụ huynh</h4>
-                <h1 class="mb-5 display-3">Phụ Huynh Nói Gì Về Viettutor?</h1>
+                <h1 class="mb-5 display-3">Phụ Huynh Nói Gì Về Gia Sư Việt?</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.3s">
                 <div class="testimonial-item img-border-radius bg-light border border-primary p-4">

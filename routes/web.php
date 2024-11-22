@@ -35,6 +35,7 @@ Route::prefix('/login')->group(function () {
     Route::get('/',[LoginController::class,'index'])->name('login.index');
     Route::post('/auth', [LoginController::class,'login'])->name('login.login');
 });
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::prefix('admin')->group(function () {
     Route::prefix('tutor')->group(function () {
         Route::get('/', [TutorController::class, 'index'])->name('tutor.index');

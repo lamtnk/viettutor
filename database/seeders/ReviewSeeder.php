@@ -58,7 +58,7 @@ class ReviewSeeder extends Seeder
         Review::create([
             'course_id' => 6,
             'student_id' => 6,
-            'tutor_id' => 7,
+            'tutor_id' => 6,
             'rating' => 4.8,
             'comment' => 'Kỹ năng sư phạm tốt, hỗ trợ bài tập hiệu quả.',
         ]);
@@ -67,7 +67,7 @@ class ReviewSeeder extends Seeder
         Review::create([
             'course_id' => 7,
             'student_id' => 7,
-            'tutor_id' => 8,
+            'tutor_id' => 6,
             'rating' => 3.5,
             'comment' => 'Cần tập trung hơn vào việc hướng dẫn bài tập.',
         ]);
@@ -76,7 +76,7 @@ class ReviewSeeder extends Seeder
         Review::create([
             'course_id' => 8,
             'student_id' => 8,
-            'tutor_id' => 9,
+            'tutor_id' => 6,
             'rating' => 5.0,
             'comment' => 'Gia sư tuyệt vời, hỗ trợ tốt cho kỳ thi.',
         ]);
@@ -85,7 +85,7 @@ class ReviewSeeder extends Seeder
         Review::create([
             'course_id' => 9,
             'student_id' => 9,
-            'tutor_id' => 10,
+            'tutor_id' => 6,
             'rating' => 4.2,
             'comment' => 'Phương pháp dạy tốt nhưng cần cải thiện về thời gian.',
         ]);
@@ -94,9 +94,39 @@ class ReviewSeeder extends Seeder
         Review::create([
             'course_id' => 10,
             'student_id' => 10,
-            'tutor_id' => 11,
+            'tutor_id' => 6,
             'rating' => 3.8,
             'comment' => 'Gia sư thân thiện nhưng còn thiếu sự chuẩn bị.',
         ]);
+        // Đánh giá 11
+        Review::create([
+            'course_id' => 4,
+            'student_id' => 4,
+            'tutor_id' => 5,
+            'rating' => 5.0,
+            'comment' => 'Dạy Ok.',
+        ]);
+        Review::create([
+            'course_id' => 4,
+            'student_id' => 4,
+            'tutor_id' => 5,
+            'rating' => 5.0,
+            'comment' => 'Dạy Ok.',
+        ]);
+        Review::create([
+            'course_id' => 4,
+            'student_id' => 4,
+            'tutor_id' => 5,
+            'rating' => 5.0,
+            'comment' => 'Dạy Ok.',
+        ]);
+        Review::create([
+            'course_id' => 4,
+            'student_id' => 4,
+            'tutor_id' => 5,
+            'rating' => 5.0,
+            'comment' => 'Dạy Ok.',
+        ]);
+        
     }
 }

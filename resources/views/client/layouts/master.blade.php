@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>BabyCare - Daycare Website Template</title>
+    <title>Gia Sư Việt </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Arial:wght@600;700&family=Montserrat:wght@200;400;600&display=swap"
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
@@ -85,21 +85,38 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
                         <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
-                        <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
-                        <a href="service.html" class="nav-item nav-link">Dịch vụ</a>
-                        <a href="{{ route('course.index') }}" class="nav-item nav-link">Chương trình</a>
-                        <a href="event.html" class="nav-item nav-link">Sự kiện</a>
-                        <div class="nav-item dropdown">
+                        {{-- <a href="about.html" class="nav-item nav-link">Giới thiệu</a> --}}
+                        {{-- <a href="service.html" class="nav-item nav-link">Dịch vụ</a> --}}
+                        <a href="{{ route('course.index') }}" class="nav-item nav-link">Khoá học</a>
+                        {{-- <a href="event.html" class="nav-item nav-link">Sự kiện</a> --}}
+                        <a href="{{ route('list-tutor.index') }}" class="nav-item nav-link">Đội ngũ </a>
+                        @auth
+                            @if (auth()->user())
+                                <a href="{{ route('tutorRegister.showForm') }}" class="nav-item nav-link">Đăng ký gia sư</a>
+                            @endif
+                        @endauth
+                        {{-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Khác</a>
                             <div class="dropdown-menu m-0 bg-secondary rounded-0">
                                 <a href="blog.html" class="dropdown-item">Blog</a>
-                                <a href="{{ route('list-tutor.index') }}" class="dropdown-item">Đội ngũ của chúng
-                                    tôi</a>
+
                                 <a href="testimonial.html" class="dropdown-item">Cảm nhận khách hàng</a>
-                                <a href="{{ route('tutorRegister.showForm') }}" class="dropdown-item">Đăng ký gia sư</a>
                             </div>
-                        </div>
+                        </div> --}}
                         <a href="{{ route('contact.index') }}" class="nav-item nav-link">Liên hệ</a>
+                        <a href="{{ route('login.index') }}" class="nav-item nav-link">Đăng nhập</a>
+                        @auth
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Chào,
+                                    {{ auth()->user()->name }}!</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="{{ route('list-tutor.show',['id', auth()->user()->id ]) }}" class="dropdown-item">Hồ sơ</a>
+                                    <a href="{{ route('logout') }}" class="dropdown-item">Đăng xuất</a>
+                                </div>
+
+                            </div>
+                        @endauth
+
                     </div>
                     <div class="d-flex me-4">
                         <div id="phone-tada" class="d-flex align-items-center justify-content-center">
@@ -266,15 +283,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your
-                            Site Name</a>, All right reserved.</span>
+                    <span class="text-light"><a href="#"><i
+                                class="fas fa-copyright text-light me-2"></i>giasuviet.vn
+                        </a></span>
                 </div>
                 <div class="col-md-6 my-auto text-center text-md-end text-white">
                     <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                     <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                     <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a
-                        clas="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    Thiết kế bởi <a class="border-bottom" href="https://htmlcodex.com">FPL HP </a> <a
+                        clas="border-bottom" href="https://themewagon.com"></a>
                 </div>
             </div>
         </div>
