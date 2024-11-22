@@ -11,7 +11,6 @@ class Course extends Model
 
     protected $fillable = [
         'parent_id',
-        'subject',
         'level',
         'location',
         'num_of_students',
@@ -19,12 +18,20 @@ class Course extends Model
         'start_date',
         'min_rate',
         'max_rate',
-        'description'
+        'description',
+        'desired_duration_per_session', // Thời lượng giờ 1 buổi mong muốn               // Thời gian có thể học
+        'sessions_per_week',             // Bao nhiêu buổi 1 tuần
+        'title'                          // Tiêu đề ngắn gọn
     ];
 
     public function parent()
     {
         return $this->belongsTo(User::class, 'parent_id');
+    }
+
+    public function subjects()
+    {
+        return $this->belongsToMany(Subject::class, 'subject_course', 'course_id', 'subject_id');
     }
 
     public function applications()
@@ -53,7 +60,17 @@ class Course extends Model
     }
 
     public function teachingHistory()
-{
-    return $this->hasMany(TeachingHistory::class, 'course_id');
-}
+    {
+        return $this->hasMany(TeachingHistory::class, 'course_id');
+    }
+
+    public function hasActiveSessions()
+    {
+        return $this->sessions()->where('status', 'active')->exists();
+    }
+
+    public function subjectCourses()
+    {
+        return $this->hasMany(SubjectCourse::class, 'course_id');
+    }
 }
