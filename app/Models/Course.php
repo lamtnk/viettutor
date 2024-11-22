@@ -73,4 +73,14 @@ class Course extends Model
     {
         return $this->hasMany(SubjectCourse::class, 'course_id');
     }
+
+    public function courseDays()
+    {
+        return $this->hasMany(CourseDay::class, 'course_id');
+    }
+
+    public function courseShifts()
+    {
+        return $this->hasMany(CourseShift::class, 'course_id');
+    }
 }
