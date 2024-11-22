@@ -30,7 +30,7 @@ class LoginService {
         $user = Auth::user();
 
         // Điều hướng theo loại người dùng
-        if ($user->user_type == 'parent' || $user->user_type == 'teacher') {
+        if ($user->user_type == 'parent' || $user->user_type == 'tutor') {
             return redirect()->route('home.index');
         } elseif ($user->user_type == 'admin') {
             return redirect()->route('admin.index');

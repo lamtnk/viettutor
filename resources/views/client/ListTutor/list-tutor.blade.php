@@ -63,7 +63,7 @@
                     <div class="info p-3 bg-dark rounded-bottom">
                       <h4 class="text-white mt-0 mb-2 text-center">
                         <a
-                          href="/thong-tin-gia-su/linda-carlson-55452"
+                          href="{{ route('list-tutor.show',['id' => $item->user->id ]) }}"
                           class="titleTeacher text-white text-decoration-none"
                           >{{$item->user->name}}</a
                         >

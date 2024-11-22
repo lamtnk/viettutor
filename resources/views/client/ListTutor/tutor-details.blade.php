@@ -107,16 +107,12 @@
           </div>
           <hr />
           <div class="mb-4 mt-4 d-flex flex-wrap overflow-container">
-            <span class="custom-tag">Liên Minh Huyền Thoại</span>
-            <span class="custom-tag">PUBG PC</span>
-            <span class="custom-tag">Liên Minh Huyền Thoại</span>
-            <span class="custom-tag">PUBG PC</span>
-            <span class="custom-tag">Liên Minh Huyền Thoại</span>
-            <span class="custom-tag">PUBG PC</span>
-            <span class="custom-tag">CSGO</span>
-            <span class="custom-tag">PUBG PC</span>
-            <span class="custom-tag">CSGO</span>
-            <span class="custom-tag">PUBG PC</span>
+            <span class="custom-tag">Toán</span>
+            <span class="custom-tag">Văn </span>
+            <span class="custom-tag">Anh</span>
+            <span class="custom-tag">Lý </span>
+            <span class="custom-tag">Hoá</span>
+            <span class="custom-tag">Sinh</span>
           </div>
           <hr />
           <h4><strong>Thông tin</strong></h4>

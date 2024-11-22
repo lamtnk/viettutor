@@ -21,7 +21,7 @@
                         <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
                         <div class="">
                             <h4>Địa chỉ</h4>
-                            <p class="mb-2">271 Lê Thánh Tông,Phường Mái Chai,Ngô Quyền,Hải Phòng</p>
+                            <p class="mb-2">271 LTT-Ngô Quyền-HP</p>
                         </div>
                     </div>
                 </div>
