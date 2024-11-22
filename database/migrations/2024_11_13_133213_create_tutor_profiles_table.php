@@ -21,6 +21,10 @@ class CreateTutorProfilesTable extends Migration
             $table->decimal('min_hourly_rate', 10, 2)->nullable();
             $table->decimal('max_hourly_rate', 10, 2)->nullable();
             $table->string('profile_image')->nullable();
+            $table->string('front_of_id')->nullable();
+            $table->string('back_of_id')->nullable();
+            $table->integer('sex')->nullable();
+            $table->integer('birth_year')->nullable();
             $table->integer('area')->nullable();
             $table->integer('status')->nullable();
             $table->timestamps();

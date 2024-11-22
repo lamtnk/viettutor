@@ -10,32 +10,19 @@ use Illuminate\Http\Request;
 class ListTutorController extends Controller
 {
     protected $listTutorService;
+    // protected $tutor;
     public function __construct(ListTutorService $listTutorService) {
         $this->listTutorService = $listTutorService;
     }
-    private function customRound($number) {
-        $decimal = $number - intval($number);
-        if ($decimal >= 0.8) {
-            return intval($number) + 1;
-        } elseif ($decimal >= 0.3) {
-            return intval($number) + 0.5;
-        } else {
-            return intval($number);
-        }
-    }
     public function index() {
-        $listTutor = $this->listTutorService->getFullProfile();
-        foreach ($listTutor as $key => $item) {
-            // Làm tròn số 
-            $listTutor[$key]['roundedValue'] = $this->customRound($listTutor[$key]['average_rating']);
-            // Tính sao đầy
-            $listTutor[$key]['filledStars'] = floor($listTutor[$key]['roundedValue']);
-            // Tính sao nửa
-            $listTutor[$key]['hasHalfStar'] = ($listTutor[$key]['roundedValue'] - $listTutor[$key]['filledStars']) == 0.5;
-            // Tính sao trống
-            $listTutor[$key]['emptyStars'] = 5 - $listTutor[$key]['filledStars'] - ($listTutor[$key]['hasHalfStar'] ? 1 : 0);
-        }
+        $listTutor = $this->listTutorService->getFullProfile();      
         // dd($listTutor);
         return view('client.ListTutor.list-tutor', compact('listTutor'));
+    }
+    public function findTutorById(int $id) {
+        $tutor=$this->listTutorService->getTutorByTutorId($id);
+        $certificates=$this->listTutorService->getCertificatesTutor($tutor->first()->id);
+        $reviewers=$this->listTutorService->getReviewsByTutorId($tutor->first()->id);
+        return view('client.ListTutor.tutor-details', compact(['tutor','certificates','reviewers']));
     }
 }

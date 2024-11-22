@@ -37,11 +37,12 @@
                                     <th>Năm kinh nghiệm</th>
                                     <th>Môn dạy được</th>
                                     <th>Bằng cấp</th>
-                                    <th>Điểm tốt nghiệp cấp 3</th>
+                                    <th>Điểm đánh giá trung bình</th>
                                     <th>Tổng số giờ giảng</th>
                                     <th>Giá min</th>
                                     <th>Giá max</th>
                                     <th>Ảnh</th>
+                                    <th>trạng thái</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -67,7 +68,10 @@
                                                 N/A
                                             @endif
                                         </td>
-                                        <td><a class="btn btn-secondary btn-sm" href="">Chi tiết</a></td>
+                                        <td>{{ $item->status == 1 ? 'Active' : 'Inactive' }}</td>
+                                        <td><a class="btn btn-secondary btn-sm"
+                                                href="{{ route('tutor.profile', ['tutorId' => $item->id]) }}">Chi tiết</a>
+                                        </td>
                                     </tr>
                                 @endforeach
                             </tbody>

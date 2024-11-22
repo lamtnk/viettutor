@@ -25,6 +25,9 @@ class TutorProfileSeeder extends Seeder
             'min_hourly_rate' => 200000,
             'max_hourly_rate' => 400000,
             'profile_image' => 'path/to/image1.jpg',
+            'back_of_id' => 'path/to/image2.jpg',
+            'front_of_id' => 'path/to/image2.jpg',
+            'sex' => 1,
         ]);
 
         // Gia sư 2
@@ -42,6 +45,9 @@ class TutorProfileSeeder extends Seeder
             'min_hourly_rate' => 250000,
             'max_hourly_rate' => 450000,
             'profile_image' => 'path/to/image2.jpg',
+            'back_of_id' => 'path/to/image2.jpg',
+            'front_of_id' => 'path/to/image2.jpg',
+            'sex' => 1,
         ]);
 
         // Gia sư 3
@@ -59,6 +65,9 @@ class TutorProfileSeeder extends Seeder
             'min_hourly_rate' => 180000,
             'max_hourly_rate' => 350000,
             'profile_image' => 'path/to/image3.jpg',
+            'back_of_id' => 'path/to/image2.jpg',
+            'front_of_id' => 'path/to/image2.jpg',
+            'sex' => 1,
         ]);
 
         // Gia sư 4
@@ -76,6 +85,9 @@ class TutorProfileSeeder extends Seeder
             'min_hourly_rate' => 300000,
             'max_hourly_rate' => 600000,
             'profile_image' => 'path/to/image4.jpg',
+            'back_of_id' => 'path/to/image2.jpg',
+            'front_of_id' => 'path/to/image2.jpg',
+            'sex' => 1,
         ]);
 
         // Gia sư 5
@@ -93,6 +105,9 @@ class TutorProfileSeeder extends Seeder
             'min_hourly_rate' => 150000,
             'max_hourly_rate' => 300000,
             'profile_image' => 'path/to/image5.jpg',
+            'back_of_id' => 'path/to/image2.jpg',
+            'front_of_id' => 'path/to/image2.jpg',
+            'sex' => 1,
         ]);
 
         // Gia sư 6
@@ -110,6 +125,9 @@ class TutorProfileSeeder extends Seeder
             'min_hourly_rate' => 350000,
             'max_hourly_rate' => 700000,
             'profile_image' => 'path/to/image6.jpg',
+            'back_of_id' => 'path/to/image2.jpg',
+            'front_of_id' => 'path/to/image2.jpg',
+            'sex' => 2,
         ]);
 
         // Gia sư 7
@@ -127,6 +145,9 @@ class TutorProfileSeeder extends Seeder
             'min_hourly_rate' => 220000,
             'max_hourly_rate' => 450000,
             'profile_image' => 'path/to/image7.jpg',
+            'back_of_id' => 'path/to/image2.jpg',
+            'front_of_id' => 'path/to/image2.jpg',
+            'sex' => 2,
         ]);
     }
 }
