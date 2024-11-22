@@ -24,6 +24,10 @@ class DatabaseSeeder extends Seeder
             ReportSeeder::class,
             CertificateSeeder::class,
             TeachingHistorySeeder::class,
+            SubjectSeeder::class,
+            SubjectCourseSeeder::class,
+            CourseDaySeeder::class,
+            CourseShiftSeeder::class,
         ]);
     }
 }
